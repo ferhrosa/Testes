@@ -1,0 +1,8 @@
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\WebService\bin\WebService.dll
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\WebService\bin\WebService.pdb
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\WebService\bin\WebService.xml
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\WebService\obj\Debug\WebService.Resources.resources
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\WebService\obj\Debug\WebService.vbproj.GenerateResource.Cache
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\WebService\obj\Debug\WebService.dll
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\WebService\obj\Debug\WebService.xml
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\WebService\obj\Debug\WebService.pdb

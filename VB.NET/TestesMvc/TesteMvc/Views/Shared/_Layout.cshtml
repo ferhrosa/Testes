@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Teste MCV - @ViewBag.Title</title>
+</head>
+<body>
+    <div>
+
+        <ul>
+            <li>@Html.ActionLink("Início", "Index", "Home")</li>
+            <li>@Html.ActionLink("Produtos", "Index", "Produto", new {area = "Cadastros"}, null)</li>
+        </ul>
+
+        @RenderBody()
+    </div>
+</body>
+</html>

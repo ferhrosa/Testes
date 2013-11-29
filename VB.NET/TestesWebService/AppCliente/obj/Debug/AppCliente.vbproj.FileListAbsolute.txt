@@ -1,0 +1,14 @@
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\bin\Debug\AppCliente.exe.config
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\bin\Debug\AppCliente.exe
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\bin\Debug\AppCliente.pdb
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\bin\Debug\AppCliente.xml
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\MainWindow.baml
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\MainWindow.g.vb
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\Application.g.vb
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\AppCliente_MarkupCompile.cache
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\AppCliente.g.resources
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\AppCliente.Resources.resources
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\AppCliente.vbproj.GenerateResource.Cache
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\AppCliente.exe
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\AppCliente.xml
+D:\Dev\GitHub\Testes\VB.NET\TestesWebService\AppCliente\obj\Debug\AppCliente.pdb

@@ -1,0 +1,26 @@
+﻿@model TesteMvc.Models.Produto
+
+@{
+    ViewBag.Title = "Cadastro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Cadastro</h2>
+
+
+@{ Html.BeginForm("Cadastro", "Produto", (!Model.Id.HasValue ? null : new { id = @Model.Id.Value })); }
+
+@if (Model.Id.HasValue)
+{
+    @:Id: @Model.Id<br />
+}
+
+Descrição: @Html.TextBox("descricao", Model.Descricao, new { maxlength = 40, style = "width: 200px" })<br />
+Quantidade: @Model.Quantidade<br />
+
+<input type="submit" value="Salvar" />
+
+@{ Html.EndForm(); }
+
+<br />
+@Html.ActionLink("Voltar", "Index")
