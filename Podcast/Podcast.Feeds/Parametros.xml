@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Parametros>
+
+	<Feeds>
+		<Feed Nome="99Vidas" Url="http://feeds.feedburner.com/99vidaspodcast" />
+		<Feed Nome="Conversa com Criança" Url="http://feeds.feedburner.com/ConversaComCrianca" />
+		<Feed Nome="FIAP Café" Url="https://www.fiap.com.br/fiapx/podcast/rss/fiap-cafe" />
+		<Feed Nome="Frango Fino" Url="http://feeds.feedburner.com/frangofinopodcast" />
+		<Feed Nome="Geek Out" Url="https://geekout.fm/feed.xml" />
+		<Feed Nome="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
+		<Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/dashpodcast" />
+		<Feed Nome="Lambda3" Url="http://blog.lambda3.com.br/feed/podcast" />
+		<Feed Nome="Mamilos" Url="http://feeds.feedburner.com/mamilos" />
+		<Feed Nome="MRG" Url="http://feed.matandorobosgigantes.com" />
+		<Feed Nome="Mupoca" Url="http://feeds.feedburner.com/mupoca" />
+		<Feed Nome="Não Ouvo" Url="http://feeds.feedburner.com/naoouvo" />
+		<Feed Nome="Nerdcast" Url="http://feed.nerdcast.com.br" />
+		<Feed Nome="OPEXCast" Url="http://feeds.feedburner.com/opexcast" />
+		<Feed Nome="Overloadr" Serie="Bilheteria" Url="http://feeds.feedburner.com/over-bilheteria" />
+		<Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip" />
+		<Feed Nome="Papo de Gordo" Url="http://feeds.feedburner.com/papodegordo" />
+		<Feed Nome="PodQuest" Url="http://feeds.feedburner.com/doublejump/podquest" />
+		<Feed Nome="RapaduraCast" Url="http://feeds.feedburner.com/rapaduracast" />
+		<Feed Nome="Rede Geek" Url="http://feed.redegeek.com.br/podcasts" />
+		<Feed Nome="Scicast" Url="http://feed.scicast.com.br" />
+	</Feeds>
+
+	<LimiteEpisodios>5</LimiteEpisodios>
+
+</Parametros>

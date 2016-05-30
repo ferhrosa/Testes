@@ -1,0 +1,57 @@
+﻿<MetalMenu
+    xmlns="clr-namespace:MetalActionEngine;assembly=MetalActionEngine"
+    TitleAreaHeight="130" TitleText="JOGO DE TESTE"
+    TitleFontName="Motorwerk_32" ItemsFontName="Impact_24" ItemsColorExpression="LightGray">
+
+    <MetalMenu.Items>
+        <MetalMenuItem Text="INICIAR NOVO JOGO" Action="StartGame" />
+        
+        <!--<MetalMenuItem Text="CARREGAR JOGO SALVO">
+        </MetalMenuItem>-->
+
+        <MetalMenuItem Text="OPÇÕES">
+            <MetalMenuItem.ChildMenu>
+
+                <MetalMenu TitleText="OPÇÕES" TitleColorExpression="Cyan" TitleFontName="Calibri_18">
+                    <MetalMenu.Items>
+                        
+                        <MetalMenuItem Text="DIFICULDADE">
+                            <MetalMenuItem.ChildMenu>
+
+                                <MetalMenu TitleText="DIFICULDADE" TitleColorExpression="Cyan" TitleFontName="Calibri_18">
+                                    <MetalMenu.Items>
+                                        <MetalMenuItem Text="Fácil" Action="BackToParentMenu" />
+                                        <MetalMenuItem Text="Médio" Action="BackToParentMenu" />
+                                        <MetalMenuItem Text="Dfícil" Action="BackToParentMenu" />
+                                        <MetalMenuItem Text="CANCELAR" Action="BackToParentMenu" />
+                                    </MetalMenu.Items>
+                                </MetalMenu>
+                                
+                            </MetalMenuItem.ChildMenu>
+                        </MetalMenuItem>
+                        
+                        <MetalMenuItem Text="Item 2" />
+                        <MetalMenuItem Text="Item 3" />
+                        <MetalMenuItem Text="Item 4" />
+                        <MetalMenuItem Text="VOLTAR" Action="BackToParentMenu" />
+                    </MetalMenu.Items>
+                </MetalMenu>
+
+            </MetalMenuItem.ChildMenu>
+        </MetalMenuItem>
+
+        <MetalMenuItem Text="SAIR">
+            <MetalMenuItem.ChildMenu>
+
+                <MetalMenu TitleText="DESEJA MESMO SAIR DO JOGO?" TitleColorExpression="Red">
+                    <MetalMenu.Items>
+                        <MetalMenuItem Text="NÃO" Action="BackToParentMenu" />
+                        <MetalMenuItem Text="SIM" Action="ExitGame" />
+                    </MetalMenu.Items>
+                </MetalMenu>
+
+            </MetalMenuItem.ChildMenu>
+        </MetalMenuItem>
+    </MetalMenu.Items>
+
+</MetalMenu>

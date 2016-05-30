@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>D:\Dev\GitHub\Testes\ASP.NET\WebApplicationTeste\WebApplicationTeste\Scripts\app\manage.viewmodel.js</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>d:\dev\github\testes\asp.net\webapplicationteste\webapplicationteste\controllers\accountcontroller.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>d:\dev\github\testes\asp.net\webapplicationteste\webapplicationteste\scripts\app\app.datamodel.js</string>
+      <string>d:\dev\github\testes\asp.net\webapplicationteste\webapplicationteste\scripts\app\app.viewmodel.js</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>d:\dev\github\testes\asp.net\webapplicationteste\webapplicationteste\scripts\app\login.viewmodel.js</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>d:\dev\github\testes\asp.net\webapplicationteste\webapplicationteste\scripts\app\register.viewmodel.js</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Dev\GitHub\Testes\ASP.NET\WebApplicationTeste\WebApplicationTeste\Controllers\HomeController.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

@@ -1,0 +1,7 @@
+﻿<MetalGame
+    xmlns="clr-namespace:MetalActionEngine;assembly=MetalActionEngine"
+    MainMenuFile="MainMenu"
+    IsMouseVisible="True"
+    DefaultCharacterFile="Pirlo">
+    
+</MetalGame>

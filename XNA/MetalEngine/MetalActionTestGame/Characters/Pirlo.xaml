@@ -1,0 +1,10 @@
+﻿<MetalCharacter
+    xmlns="clr-namespace:MetalActionEngine;assembly=MetalActionEngine"
+    Width="24"
+    Height="32"
+    StandingFrames="1"
+    WalkingFrames="4"
+    WalkingDelay="150"
+    >
+    
+</MetalCharacter>

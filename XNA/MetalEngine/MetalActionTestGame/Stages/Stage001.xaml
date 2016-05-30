@@ -1,0 +1,17 @@
+﻿<MetalStage
+    xmlns="clr-namespace:MetalActionEngine;assembly=MetalActionEngine"
+    >
+    
+    <MetalStage.Screens>
+        
+        <MetalStageScreen Name="Beginning">
+            <MetalStageScreen.Parts>
+                
+                <MetalStagePart Row="1" Column="1" />
+                
+            </MetalStageScreen.Parts>
+        </MetalStageScreen>
+        
+    </MetalStage.Screens>
+    
+</MetalStage>
