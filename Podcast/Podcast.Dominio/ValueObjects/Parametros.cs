@@ -18,5 +18,8 @@ namespace Podcast.Dominio.ValueObjects
 		[XmlElement]
 		public int LimiteEpisodios { get; set; }
 
+		[XmlElement]
+		public string ArquivoSaida { get; set; }
+
 	}
 }

@@ -20,7 +20,15 @@ namespace Podcast.Testes
 
 			var tasks = new List<Task<IEnumerable<Episodio>>>();
 
-			foreach(var feed in feeds)
+			var feedsFiltrados = from f in feeds
+								 where
+									// Não aplica filtro se não forem passados parâmetros.
+									!args.Any()
+									// Verifica se o nome do feed está entre os parâmetros de execução do programa.
+									|| args.Contains(f.Nome, StringComparer.OrdinalIgnoreCase)
+								 select f;
+
+			foreach(var feed in feedsFiltrados)
 			{
 				tasks.Add(LeitorFeeds.ListarEpisodios(feed));
 				//foreach(var episodio in LeitorFeeds.ListarEpisodios(feed))
@@ -52,8 +60,8 @@ namespace Podcast.Testes
 			Console.ForegroundColor = ConsoleColor.White;
 			//Console.WriteLine(sb);
 			
-			var caminhoArquivo = @"C:\Temp\podcasts.txt";
-			Console.WriteLine("Salvando dados no arquivo: {0}", caminhoArquivo);
+			var caminhoArquivo = LeitorFeeds.Parametros.ArquivoSaida;
+			Console.WriteLine("Dados salvos no arquivo: {0}", caminhoArquivo);
 
 			File.WriteAllText(caminhoArquivo, sb.ToString());
 

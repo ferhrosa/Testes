@@ -3,28 +3,46 @@
 
 	<Feeds>
 		<Feed Nome="99Vidas" Url="http://feeds.feedburner.com/99vidaspodcast" />
+		<Feed Nome="Anticast" Url="http://feeds.feedburner.com/anticastdesign" />
 		<Feed Nome="Conversa com Criança" Url="http://feeds.feedburner.com/ConversaComCrianca" />
+		<Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml" />
+		<Feed Nome="dotNet Arc Cast" Url="http://podcast.dotnetarchitects.net/feed/" />
 		<Feed Nome="FIAP Café" Url="https://www.fiap.com.br/fiapx/podcast/rss/fiap-cafe" />
 		<Feed Nome="Frango Fino" Url="http://feeds.feedburner.com/frangofinopodcast" />
+		<Feed Nome="Fronteiras da Ciência" Url="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" />
 		<Feed Nome="Geek Out" Url="https://geekout.fm/feed.xml" />
+		<Feed Nome="Grok Podcast" Url="http://www.grokpodcast.com/atom.xml" />
 		<Feed Nome="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
+		<Feed Nome="Hipsters Ponto Tech" Url="http://hipsters.tech/feed/podcast/" />
 		<Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/dashpodcast" />
 		<Feed Nome="Lambda3" Url="http://blog.lambda3.com.br/feed/podcast" />
 		<Feed Nome="Mamilos" Url="http://feeds.feedburner.com/mamilos" />
 		<Feed Nome="MRG" Url="http://feed.matandorobosgigantes.com" />
 		<Feed Nome="Mupoca" Url="http://feeds.feedburner.com/mupoca" />
 		<Feed Nome="Não Ouvo" Url="http://feeds.feedburner.com/naoouvo" />
+		<Feed Nome="Naruhodo" Url="http://feeds.feedburner.com/naruhodopodcast" />
 		<Feed Nome="Nerdcast" Url="http://feed.nerdcast.com.br" />
+		<!--<Feed Nome="Nerdcast" Url="https://jovemnerd.com.br/feed-nerdcast/" />-->
+		<Feed Nome="O Melhor Podcast do Brasil" Url="http://feeds.soundcloud.com/users/soundcloud:users:13696676/sounds.rss" />
 		<Feed Nome="OPEXCast" Url="http://feeds.feedburner.com/opexcast" />
 		<Feed Nome="Overloadr" Serie="Bilheteria" Url="http://feeds.feedburner.com/over-bilheteria" />
 		<Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip" />
 		<Feed Nome="Papo de Gordo" Url="http://feeds.feedburner.com/papodegordo" />
+		<Feed Nome="Papo Torto" Url="http://feeds.feedburner.com/papotortocast" />
 		<Feed Nome="PodQuest" Url="http://feeds.feedburner.com/doublejump/podquest" />
 		<Feed Nome="RapaduraCast" Url="http://feeds.feedburner.com/rapaduracast" />
-		<Feed Nome="Rede Geek" Url="http://feed.redegeek.com.br/podcasts" />
+		<Feed Nome="Rede Geek" Url="http://www.redegeek.com.br/feed/podcast" />
 		<Feed Nome="Scicast" Url="http://feed.scicast.com.br" />
+
+
+		<!-- Inativos -->
+		<!--
+        <Feed Nome="Save Game" Url="http://www.b9.com.br/podcasts/save-game/feed/" />
+        -->
 	</Feeds>
 
 	<LimiteEpisodios>5</LimiteEpisodios>
+
+	<ArquivoSaida>C:\Temp\podcasts.txt</ArquivoSaida>
 
 </Parametros>
