@@ -17,5 +17,7 @@ namespace Podcast.Dominio.Entidades
 		public string Titulo { get; set; }
 
 		public DateTime Publicacao { get; set; }
+
+        public TimeSpan Duracao { get; set; }
 	}
 }

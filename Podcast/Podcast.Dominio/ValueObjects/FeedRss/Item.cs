@@ -17,5 +17,8 @@ namespace Podcast.Dominio.ValueObjects.FeedRss
 
 		[XmlElement("pubDate")]
 		public string Publicacao { get; set; }
+
+        [XmlElement("duration", Namespace = Rss.NamespaceItunes)]
+        public string Duracao { get; set; }
 	}
 }

@@ -30,7 +30,7 @@ namespace Podcast.Testes
 
 			foreach(var feed in feedsFiltrados)
 			{
-				tasks.Add(LeitorFeeds.ListarEpisodios(feed));
+				tasks.Add(LeitorFeeds.ListarEpisodios(feed, ignorarLimiteEpisodios: args.Any()));
 				//foreach(var episodio in LeitorFeeds.ListarEpisodios(feed))
 				//{
 				//	//Console.WriteLine("{0} | {1} | {2}", episodio.Titulo, episodio.Id, episodio.Publicacao);

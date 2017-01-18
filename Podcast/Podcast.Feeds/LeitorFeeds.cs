@@ -53,7 +53,7 @@ namespace Podcast.Feeds
 			}
 		}
 
-		public static async Task<IEnumerable<Episodio>> ListarEpisodios(Feed feed)
+		public static async Task<IEnumerable<Episodio>> ListarEpisodios(Feed feed, bool ignorarLimiteEpisodios = false)
 		{
 			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.WriteLine("Iniciando: {0}", feed.Nome);
@@ -85,7 +85,7 @@ namespace Podcast.Feeds
 						Publicacao = ConverterData(item.Publicacao)
 					});
 
-					if(Parametros.LimiteEpisodios > 0 && contador++ >= Parametros.LimiteEpisodios)
+					if(!ignorarLimiteEpisodios && Parametros.LimiteEpisodios > 0 && contador++ >= Parametros.LimiteEpisodios)
 					{
 						break;
 					}
@@ -197,6 +197,16 @@ namespace Podcast.Feeds
 
 			return data;
 		}
+
+        private static TimeSpan ConverterTempo(string tempoTexto)
+        {
+            if (String.IsNullOrWhiteSpace(tempoTexto) || !tempoTexto.Contains(":"))
+            {
+                return TimeSpan.Zero;
+            }
+
+            throw new NotImplementedException();
+        }
 
 	}
 }
