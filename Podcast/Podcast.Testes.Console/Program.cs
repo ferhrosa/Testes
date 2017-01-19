@@ -45,7 +45,7 @@ namespace Podcast.Testes
                         GerarArquivo(episodios, caminhoArquivo);
                     }
 
-                    if (LeitorFeeds.Parametros.LimiteEpisodios > 0 && episodios.Count() > LeitorFeeds.Parametros.LimiteEpisodios)
+                    if (!ignorarLimiteEpisodios && LeitorFeeds.Parametros.LimiteEpisodios > 0 && episodios.Count() > LeitorFeeds.Parametros.LimiteEpisodios)
                     {
                         return episodios.Take(LeitorFeeds.Parametros.LimiteEpisodios);
                     }

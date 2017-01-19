@@ -204,7 +204,14 @@ namespace Podcast.Feeds
                     h = Convert.ToInt32(partes[0]);
                 }
 
-                return new TimeSpan(h, m, s);
+                var tempo = new TimeSpan(h, m, s);
+
+                if (tempo == TimeSpan.Zero)
+                {
+                    return null;
+                }
+
+                return tempo;
             }
             catch(Exception ex)
             {
