@@ -47,13 +47,13 @@ namespace Podcast.Feeds
 
 					// Fecha o arquivo de parâmetros.
 					stream.Close();
-
 				}
+
 				return parametros;
 			}
 		}
 
-		public static async Task<IEnumerable<Episodio>> ListarEpisodios(Feed feed, bool ignorarLimiteEpisodios = false)
+		public static async Task<IEnumerable<Episodio>> ListarEpisodiosAsync(Feed feed, bool ignorarLimiteEpisodios = false)
 		{
 			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.WriteLine("Iniciando: {0}", feed.Nome);
@@ -71,24 +71,17 @@ namespace Podcast.Feeds
 				// Cria o objeto Parametros de acordo com o arquivo de parâmetros.
 				var rss = (Rss)serializer.Deserialize(stream);
 
-				var contador = 1;
-
 				foreach(var item in rss.Channel.Items)
 				{
-					//yield return new Episodio
 					episodios.Add(new Episodio
 					{
 						Podcast = feed.Nome,
 						Serie = feed.Serie,
 						Id = item.Id,
 						Titulo = item.Title,
-						Publicacao = ConverterData(item.Publicacao)
-					});
-
-					if(!ignorarLimiteEpisodios && Parametros.LimiteEpisodios > 0 && contador++ >= Parametros.LimiteEpisodios)
-					{
-						break;
-					}
+						Publicacao = ConverterData(item.Publicacao),
+                        Duracao = ConverterTempo(item.Duration)
+                    });
 				}
 
 				stream.Close();
@@ -102,37 +95,20 @@ namespace Podcast.Feeds
 				Console.WriteLine("Falhou: {0} | {1}", feed.Nome, ex.Message);
 			}
 
-			return episodios;
+            episodios = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo).ToList();
 
-			//return rss;
+            if (!ignorarLimiteEpisodios && Parametros.LimiteEpisodios > 0 && episodios.Count() > Parametros.LimiteEpisodios)
+            {
+                return episodios.Take(Parametros.LimiteEpisodios);
+            }
+            else
+            {
+                return episodios;
+            }
 
+        }
 
-			//var reader = XmlReader.Create(feed.Url);
-			//var rss = SyndicationFeed.Load(reader);
-
-			//var contador = 0;
-
-			//foreach(var item in rss.Items)
-			//{
-			//	yield return new Episodio
-			//	{
-			//		Podcast = feed.Nome,
-			//		Serie = feed.Serie,
-			//		Id = item.Id,
-			//		Titulo = item.Title.Text,
-			//		Publicacao = item.PublishDate.Date
-			//	};
-
-			//	if(contador++ > Parametros.LimiteEpisodios)
-			//	{
-			//		break;
-			//	}
-			//}
-
-			//reader.Close();
-		}
-
-		private static DateTime ConverterData(string dataTexto)
+        private static DateTime ConverterData(string dataTexto)
 		{
 			var data = new DateTime();
 			var dataTextoOriginal = dataTexto;
@@ -198,14 +174,42 @@ namespace Podcast.Feeds
 			return data;
 		}
 
-        private static TimeSpan ConverterTempo(string tempoTexto)
+        private static TimeSpan? ConverterTempo(string tempoTexto)
         {
             if (String.IsNullOrWhiteSpace(tempoTexto) || !tempoTexto.Contains(":"))
             {
-                return TimeSpan.Zero;
+                return null;
             }
 
-            throw new NotImplementedException();
+            var partes = tempoTexto.Split(':');
+
+            if (partes.Length > 3)
+            {
+                // Se tiver mais que 3 partes, não está nos formatos válidos (HH:MM:SS, H:MM:SS, MM:SS ou M:SS).
+                // Definição: https://lists.apple.com/archives/syndication-dev/2005/Nov/msg00002.html#_Toc526931683
+                return null;
+            }
+
+            int h = 0, m = 0, s = 0;
+
+            try
+            {
+                // Última parte.
+                s = Convert.ToInt32(partes[partes.Length - 1]);
+                // Penúltima parte.
+                m = Convert.ToInt32(partes[partes.Length - 2]);
+
+                if (partes.Length == 3)
+                {
+                    h = Convert.ToInt32(partes[0]);
+                }
+
+                return new TimeSpan(h, m, s);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception($"Erro ao converter o o texto \"{tempoTexto}\" para TimeSpan.\r\nErro: {ex.Message}");
+            }
         }
 
 	}

@@ -9,63 +9,93 @@ using System.Threading.Tasks;
 
 namespace Podcast.Testes
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
-			var feeds = LeitorFeeds.Parametros.Feeds;
+            var feeds = LeitorFeeds.Parametros.Feeds;
 
-			var episodios = new List<Episodio>();
+            var tasks = new List<Task<IEnumerable<Episodio>>>();
+            //var tasks = new List<Task>();
 
-			var tasks = new List<Task<IEnumerable<Episodio>>>();
+            var feedsFiltrados = from f in feeds
+                                 where
+                                    // Não aplica filtro se não forem passados parâmetros.
+                                    !args.Any()
+                                    // Verifica se o nome do feed está entre os parâmetros de execução do programa.
+                                    || args.Contains(f.Nome, StringComparer.OrdinalIgnoreCase)
+                                 select f;
 
-			var feedsFiltrados = from f in feeds
-								 where
-									// Não aplica filtro se não forem passados parâmetros.
-									!args.Any()
-									// Verifica se o nome do feed está entre os parâmetros de execução do programa.
-									|| args.Contains(f.Nome, StringComparer.OrdinalIgnoreCase)
-								 select f;
+            var ignorarLimiteEpisodios = args.Any() || LeitorFeeds.Parametros.ArquivoSaidaPorPodcast;
 
-			foreach(var feed in feedsFiltrados)
-			{
-				tasks.Add(LeitorFeeds.ListarEpisodios(feed, ignorarLimiteEpisodios: args.Any()));
-				//foreach(var episodio in LeitorFeeds.ListarEpisodios(feed))
-				//{
-				//	//Console.WriteLine("{0} | {1} | {2}", episodio.Titulo, episodio.Id, episodio.Publicacao);
-				//	episodios.Add(episodio);
-				//}
+            foreach (var feed in feedsFiltrados)
+            {
+                //não funciona dessa forma: var task = new Task(async () => {
+                var task = Task.Run(async () =>
+                {
+                    var episodios = await LeitorFeeds.ListarEpisodiosAsync(feed, ignorarLimiteEpisodios);
 
-				//Console.WriteLine();
-			}
+                    // Gera um arquivo por podcast.
+                    if (LeitorFeeds.Parametros.ArquivoSaidaPorPodcast)
+                    {
+                        var caminhoBase = new FileInfo(LeitorFeeds.Parametros.ArquivoSaida).DirectoryName;
+                        var caminhoArquivo = Path.Combine(caminhoBase, feed.Nome + ".txt");
 
-			Task.WhenAll(tasks);
+                        GerarArquivo(episodios, caminhoArquivo);
+                    }
 
-			foreach(var task in tasks)
-			{
-				episodios.AddRange(task.Result);
-			}
-			
-			Console.WriteLine();
+                    if (LeitorFeeds.Parametros.LimiteEpisodios > 0 && episodios.Count() > LeitorFeeds.Parametros.LimiteEpisodios)
+                    {
+                        return episodios.Take(LeitorFeeds.Parametros.LimiteEpisodios);
+                    }
+                    else
+                    {
+                        return episodios;
+                    }
+                });
 
-			var episodiosOrdenados = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo);
+                tasks.Add(task);
+            }
 
-			var sb = new StringBuilder();
-			foreach(var episodio in episodiosOrdenados)
-			{
-				sb.AppendLine(String.Format("{0}	{1}		{2}	{3:d}", episodio.Podcast, episodio.Serie, episodio.Titulo, episodio.Publicacao));
-			}
+            Task.WaitAll(tasks.ToArray());
 
-			Console.ForegroundColor = ConsoleColor.White;
-			//Console.WriteLine(sb);
-			
-			var caminhoArquivo = LeitorFeeds.Parametros.ArquivoSaida;
-			Console.WriteLine("Dados salvos no arquivo: {0}", caminhoArquivo);
+            // Gera um arquivo unificado.
+            Console.WriteLine();
 
-			File.WriteAllText(caminhoArquivo, sb.ToString());
+            var episodiosGeral = new List<Episodio>();
+            foreach (var task in tasks)
+            {
+                episodiosGeral.AddRange(task.Result);
+            }
 
-			Console.ReadKey();
-		}
-	}
+            GerarArquivo(episodiosGeral, LeitorFeeds.Parametros.ArquivoSaida);
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Pressione qualquer tecla para continuar...");
+
+            Console.ReadKey();
+        }
+        
+        private static string GerarLinhaArquivo(Episodio episodio)
+        {
+            return $"{episodio.Podcast}	{episodio.Serie}		{episodio.Titulo}	{episodio.Duracao}	{episodio.Publicacao:d}";
+        }
+
+        private static void GerarArquivo(IEnumerable<Episodio> episodios, string caminhoArquivo)
+        {
+            var episodiosOrdenados = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo);
+
+            var sb = new StringBuilder();
+            foreach (var episodio in episodiosOrdenados)
+            {
+                sb.AppendLine(GerarLinhaArquivo(episodio));
+            }
+
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"Dados salvos no arquivo: {caminhoArquivo}");
+
+            File.WriteAllText(caminhoArquivo, sb.ToString());
+        }
+    }
 }

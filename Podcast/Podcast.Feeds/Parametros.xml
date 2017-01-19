@@ -14,7 +14,8 @@
 		<Feed Nome="Grok Podcast" Url="http://www.grokpodcast.com/atom.xml" />
 		<Feed Nome="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
 		<Feed Nome="Hipsters Ponto Tech" Url="http://hipsters.tech/feed/podcast/" />
-		<Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/dashpodcast" />
+		<Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/dashpodcast" /> <!-- Games -->
+		<Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/jack-animeclub" /> <!-- Não Games -->
 		<Feed Nome="Lambda3" Url="http://blog.lambda3.com.br/feed/podcast" />
 		<Feed Nome="Mamilos" Url="http://feeds.feedburner.com/mamilos" />
 		<Feed Nome="MRG" Url="http://feed.matandorobosgigantes.com" />
@@ -43,6 +44,8 @@
 
 	<LimiteEpisodios>5</LimiteEpisodios>
 
-	<ArquivoSaida>C:\Temp\podcasts.txt</ArquivoSaida>
+	<ArquivoSaida>C:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
+
+  <ArquivoSaidaPorPodcast>true</ArquivoSaidaPorPodcast>
 
 </Parametros>

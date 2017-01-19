@@ -21,5 +21,8 @@ namespace Podcast.Dominio.ValueObjects
 		[XmlElement]
 		public string ArquivoSaida { get; set; }
 
-	}
+        [XmlElement]
+        public bool ArquivoSaidaPorPodcast { get; set; }
+
+    }
 }

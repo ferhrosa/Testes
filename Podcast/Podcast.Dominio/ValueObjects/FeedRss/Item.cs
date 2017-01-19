@@ -19,6 +19,6 @@ namespace Podcast.Dominio.ValueObjects.FeedRss
 		public string Publicacao { get; set; }
 
         [XmlElement("duration", Namespace = Rss.NamespaceItunes)]
-        public string Duracao { get; set; }
+        public string Duration { get; set; }
 	}
 }
