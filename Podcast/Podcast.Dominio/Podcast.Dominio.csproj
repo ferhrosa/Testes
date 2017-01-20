@@ -46,6 +46,7 @@
     <Compile Include="ValueObjects\FeedRss\Item.cs" />
     <Compile Include="ValueObjects\FeedRss\Rss.cs" />
     <Compile Include="ValueObjects\Parametros.cs" />
+    <Compile Include="ValueObjects\Serie.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

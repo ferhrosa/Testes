@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Xml.Serialization;
 
 namespace Podcast.Dominio.ValueObjects
 {
-	public class Feed
+    public class Feed
 	{
 
 		[XmlAttribute]
@@ -19,5 +15,8 @@ namespace Podcast.Dominio.ValueObjects
 		[XmlAttribute]
 		public string Url { get; set; }
 
-	}
+        [XmlElement("Serie")]
+        public List<Serie> Series { get; set; }
+
+    }
 }

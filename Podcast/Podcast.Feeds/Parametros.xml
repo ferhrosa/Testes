@@ -1,50 +1,318 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Parametros>
 
-	<Feeds>
-		<Feed Nome="99Vidas" Url="http://feeds.feedburner.com/99vidaspodcast" />
-		<Feed Nome="Anticast" Url="http://feeds.feedburner.com/anticastdesign" />
-		<Feed Nome="Conversa com Criança" Url="http://feeds.feedburner.com/ConversaComCrianca" />
-		<Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml" />
-		<Feed Nome="dotNet Arc Cast" Url="http://podcast.dotnetarchitects.net/feed/" />
-		<Feed Nome="FIAP Café" Url="https://www.fiap.com.br/fiapx/podcast/rss/fiap-cafe" />
-		<Feed Nome="Frango Fino" Url="http://feeds.feedburner.com/frangofinopodcast" />
-		<Feed Nome="Fronteiras da Ciência" Url="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" />
-		<Feed Nome="Geek Out" Url="https://geekout.fm/feed.xml" />
-		<Feed Nome="Grok Podcast" Url="http://www.grokpodcast.com/atom.xml" />
-		<Feed Nome="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
-		<Feed Nome="Hipsters Ponto Tech" Url="http://hipsters.tech/feed/podcast/" />
-		<Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/dashpodcast" /> <!-- Games -->
-		<Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/jack-animeclub" /> <!-- Não Games -->
-		<Feed Nome="Lambda3" Url="http://blog.lambda3.com.br/feed/podcast" />
-		<Feed Nome="Mamilos" Url="http://feeds.feedburner.com/mamilos" />
-		<Feed Nome="MRG" Url="http://feed.matandorobosgigantes.com" />
-		<Feed Nome="Mupoca" Url="http://feeds.feedburner.com/mupoca" />
-		<Feed Nome="Não Ouvo" Url="http://feeds.feedburner.com/naoouvo" />
-		<Feed Nome="Naruhodo" Url="http://feeds.feedburner.com/naruhodopodcast" />
-		<Feed Nome="Nerdcast" Url="http://feed.nerdcast.com.br" />
-		<!--<Feed Nome="Nerdcast" Url="https://jovemnerd.com.br/feed-nerdcast/" />-->
-		<Feed Nome="O Melhor Podcast do Brasil" Url="http://feeds.soundcloud.com/users/soundcloud:users:13696676/sounds.rss" />
-		<Feed Nome="OPEXCast" Url="http://feeds.feedburner.com/opexcast" />
-		<Feed Nome="Overloadr" Serie="Bilheteria" Url="http://feeds.feedburner.com/over-bilheteria" />
-		<Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip" />
-		<Feed Nome="Papo de Gordo" Url="http://feeds.feedburner.com/papodegordo" />
-		<Feed Nome="Papo Torto" Url="http://feeds.feedburner.com/papotortocast" />
-		<Feed Nome="PodQuest" Url="http://feeds.feedburner.com/doublejump/podquest" />
-		<Feed Nome="RapaduraCast" Url="http://feeds.feedburner.com/rapaduracast" />
-		<Feed Nome="Rede Geek" Url="http://www.redegeek.com.br/feed/podcast" />
-		<Feed Nome="Scicast" Url="http://feed.scicast.com.br" />
+  <Feeds>
+
+    <Feed Nome="99Vidas" Url="http://feeds.feedburner.com/99vidaspodcast">
+      <Serie Nome="Baú 99Vidas">
+        <Formato>^Baú 99Vidas </Formato>
+      </Serie>
+      <Serie Nome="99Vidas">
+        <Formato>^99Vidas </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="AntiCast" Url="http://feeds.feedburner.com/anticastdesign">
+      <Serie Nome="AntiCast Urgente">
+        <Formato>^AntiCast Urgente </Formato>
+      </Serie>
+      <Serie Nome="AntiCast">
+        <Formato>^AntiCast </Formato>
+      </Serie>
+      <Serie Nome="Leitura de Comentários">
+        <Formato>^Leitura de Comentários </Formato>
+        <Formato>^Leitura Comentários </Formato>
+      </Serie>
+      <Serie Nome="Caverna das Letras">
+        <Formato>^Caverna das Letras </Formato>
+      </Serie>
+      <Serie Nome="Não Obstante">
+        <Formato>^Não Obstante </Formato>
+      </Serie>
+      <Serie Nome="Prefiro Deleuze">
+        <Formato>^Prefiro Deleuze </Formato>
+      </Serie>
+    </Feed>
+
+    <!-- O nome de série padrão é "Conversa com Criança" ... -->
+    <Feed Nome="Conversa com Criança" Serie="Conversa com Criança" Url="http://feeds.feedburner.com/ConversaComCrianca">
+      <!-- ..., mas se o título de algum episódio bater com um dos formatos abaixo, a série será outra. -->
+      <Serie Nome="Bate-papo ao vivo">
+        <Formato>^Bate-papo ao vivo </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml">
+      <Serie Nome="DNE Extra">
+        <Formato>^DNE Extra </Formato>
+      </Serie>
+      <Serie Nome="DNE">
+        <Formato>^DNE </Formato>
+      </Serie>
+      <Serie Nome="Mountain">
+        <Formato>^Mountain </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="dotNet Arc Cast" Serie="dotNet Arc Cast" Url="http://podcast.dotnetarchitects.net/feed/" />
+
+    <Feed Nome="FIAP Café" Serie="FIAP Café" Url="https://www.fiap.com.br/fiapx/podcast/rss/fiap-cafe" />
+
+    <Feed Nome="Frango Fino" Url="http://feeds.feedburner.com/frangofinopodcast">
+      <Serie Nome="Frango Fino Facts">
+        <Formato>^(\[SEM M[ÚU]SICA\] )?FRANGO FINO FACTS </Formato>
+        <Formato></Formato>
+      </Serie>
+      <Serie Nome="Frango Fino">
+        <Formato>^(\[SEM M[ÚU]SICA\] )?FRANGO FINO </Formato>
+        <Formato></Formato>
+      </Serie>
+      <Serie Nome="Frango de Férias">
+        <Formato>^FRANGO DE FÉRIAS </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Fronteiras da Ciência" Serie="Frontdaciência" Url="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" />
+
+    <Feed Nome="Geek Out" Serie="Geek Out" Url="https://geekout.fm/feed.xml" />
+
+    <Feed Nome="Grok Podcast" Serie="Grok Podcast" Url="http://www.grokpodcast.com/atom.xml">
+      <Serie Nome="Extra">
+        <Formato>^Extra </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Hack ‘n’ Cast" Serie="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
+
+    <Feed Nome="Hipsters Ponto Tech" Serie="Hipsters" Url="http://hipsters.tech/feed/podcast/" />
+
+    <!-- Games -->
+    <Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/dashpodcast">
+      <Serie Nome="Construindo Mundos">
+        <Formato>^Construindo Mundos </Formato>
+      </Serie>
+      <Serie Nome="DASH">
+        <Formato>^DASH </Formato>
+      </Serie>
+      <Serie Nome="Vértice">
+        <Formato>^V[ée]rtice </Formato>
+      </Serie>
+    </Feed>
+    <!-- Não Games -->
+    <Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/jack-animeclub">
+      <Serie Nome="Fora da Caixa">
+        <Formato>^Fora da Caixa </Formato>
+      </Serie>
+      <Serie Nome="JACK">
+        <Formato>^JACK </Formato>
+      </Serie>
+      <Serie Nome="Linha Quente">
+        <Formato>^Linha Quente </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Lambda3" Serie="Lambda3" Url="http://blog.lambda3.com.br/feed/podcast" />
+
+    <Feed Nome="Mamilos" Serie="Mamilos" Url="http://feeds.feedburner.com/mamilos">
+      <Serie Nome="Retrospectiva">
+        <Formato>^Retrospectiva </Formato>
+      </Serie>
+      <Serie Nome="Extra">
+        <Formato>^Extra </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="MRG" Url="http://feed.matandorobosgigantes.com">
+      <Serie Nome="Cinema">
+        <Formato>^MRG \d{1,} Cinema</Formato>
+      </Serie>
+      <Serie Nome="Games">
+        <Formato>^MRG \d{1,} Games</Formato>
+      </Serie>
+      <Serie Nome="Quadrinhos">
+        <Formato>^MRG \d{1,} Quadrinhos</Formato>
+      </Serie>
+      <Serie Nome="Voz do Robô">
+        <Formato>^MRG Voz do Rob[ôo] </Formato>
+      </Serie>
+      <Serie Nome="Livros">
+        <Formato>^MRG \d{1,} Livros</Formato>
+        <Formato>^MRG Livros </Formato>
+      </Serie>
+      <Serie Nome="Especial">
+        <Formato>^MRG \d{1,} Especial</Formato>
+        <Formato>^MRG Especial </Formato>
+      </Serie>
+      <Serie Nome="MRG">
+        <Formato>^MRG </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Mupoca" Serie="Mupoca" Url="http://feeds.feedburner.com/mupoca" />
+
+    <Feed Nome="Não Ouvo" Url="http://feeds.feedburner.com/naoouvo">
+      <Serie Nome="Não Ouvo">
+        <Formato>^Não Ouvo #</Formato>
+      </Serie>
+      <Serie Nome="Teoria Não Ouvo">
+        <Formato>^Teoria Não Ouvo #</Formato>
+        <Formato>^Cyber Teoria Não Ouvo #</Formato>
+      </Serie>
+      <Serie Nome="Análise Musical">
+        <Formato>^Análise Musical #</Formato>
+      </Serie>
+      <Serie Nome="Cartinha do Não Ouvinte">
+        <Formato>^Cartinha do Não Ouvinte #</Formato>
+      </Serie>
+      <Serie Nome="Extra">
+        <Formato>^Não Ouvo Extra</Formato>
+      </Serie>
+      <Serie Nome="Não Ouvo Visita">
+        <Formato>^Não Ouvo Visita #</Formato>
+      </Serie>
+      <Serie Nome="Plantão Não Ouvo">
+        <Formato>^Plantão Não Ouvo #</Formato>
+      </Serie>
+      <Serie Nome="Teaser">
+        <Formato>^Teaser </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Naruhodo" Url="http://feeds.feedburner.com/naruhodopodcast">
+      <Serie Nome="Naruhodo">
+        <Formato>^Naruhodo #</Formato>
+      </Serie>
+    </Feed>
+
+    <!--<Feed Nome="Nerdcast" Url="https://jovemnerd.com.br/feed-nerdcast/" />-->
+    <Feed Nome="NerdCast" Url="http://feed.nerdcast.com.br">
+      <Serie Nome="Empreendedor">
+        <Formato>^Empreendedor </Formato>
+      </Serie>
+      <Serie Nome="HaloCast">
+        <Formato>^HaloCast </Formato>
+      </Serie>
+      <Serie Nome="NerdCast">
+        <Formato>^NerdCast #</Formato>
+      </Serie>
+      <Serie Nome="Teaser">
+        <Formato>^NerdCast \d{0,} Teaser </Formato>
+      </Serie>
+      <Serie Nome="NerdCast">
+        <Formato>^NerdCast </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="O Melhor Podcast do Brasil" Serie="MPB" Url="http://feeds.soundcloud.com/users/soundcloud:users:13696676/sounds.rss" />
+    
+    <Feed Nome="OPEXCast" Serie="OPEXCast" Url="http://feeds.feedburner.com/opexcast" />
+    
+    <Feed Nome="Overloadr" Serie="Bilheteria" Url="http://feeds.feedburner.com/over-bilheteria" />
+    <Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip">
+      <Serie Nome="Prêmio Overloadr 2016">
+        <Formato>^MotherChip Especial - Prêmio Overloadr 2016</Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Papo de Gordo" Serie="Papo de Gordo" Url="http://feeds.feedburner.com/papodegordo">
+      <Serie Nome="Corações Peludos">
+        <Formato>^Corações Peludos </Formato>
+      </Serie>
+      <Serie Nome="Papo de Gordo Café">
+        <Formato>^Papo de Gordo Café </Formato>
+      </Serie>
+      <Serie Nome="Papo de Gordo Especial">
+        <Formato>^Papo de Gordo Especial </Formato>
+      </Serie>
+      <Serie Nome="Papo de Gordo Extra">
+        <Formato>^Papo de Gordo Extra </Formato>
+      </Serie>
+      <Serie Nome="Papo de Gordo na Copa">
+        <Formato>^Papo de Gordo na Copa</Formato>
+      </Serie>
+      <Serie Nome="Podcast dos Lindos">
+        <Formato>^Podcast dos Lindos </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Papo Torto" Serie="Papo Torto" Url="http://feeds.feedburner.com/papotortocast">
+      <Serie Nome="Especial">
+        <Formato>^Papo Torto - Especial</Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="PodQuest" Url="http://feeds.feedburner.com/doublejump/podquest">
+      <Serie Nome="#repost">
+        <Formato>^#repost</Formato>
+      </Serie>
+      <Serie Nome="QuickQuest">
+        <Formato>^QuickQuest </Formato>
+      </Serie>
+      <Serie Nome="SideQuest">
+        <Formato>^SideQuest </Formato>
+      </Serie>
+      <Serie Nome="PodQuest">
+        <Formato>^PodQuest #</Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="RapaduraCast" Url="http://feeds.feedburner.com/rapaduracast">
+      <Serie Nome="Extra">
+        <Formato>^RapaduraCast EXTRA</Formato>
+      </Serie>
+      <Serie Nome="Preview">
+        <Formato>^Preview</Formato>
+      </Serie>
+      <Serie Nome="Repercutindo">
+        <Formato>^Repercutindo </Formato>
+      </Serie>
+      <Serie Nome="RapaduraCast">
+        <Formato>^RapaduraCast </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Rede Geek" Url="http://www.redegeek.com.br/feed/podcast">
+      <Serie Nome="WeRgeeks">
+        <Formato>^Ultrageek \d{0,} (WeRgeeks)</Formato>
+        <Formato>^WeRgeeks </Formato>
+      </Serie>
+      <Serie Nome="Ultrageek">
+        <Formato>^Ultrageek </Formato>
+      </Serie>
+      <Serie Nome="Batalha de Geeks">
+        <Formato>^Batalha de Geeks </Formato>
+        <Formato>^Ultrageek \d{0,} (WeRgeeks) – Batalha de Geeks</Formato>
+      </Serie>
+      <Serie Nome="UPDATE">
+        <Formato>^UPDATE </Formato>
+      </Serie>
+      <Serie Nome="Especial">
+        <Formato>^Especial </Formato>
+      </Serie>
+      <Serie Nome="ÁUDIO JOGO ULTRAGEEK: Apagão">
+        <Formato>^ÁUDIO JOGO ULTRAGEEK: Apagão </Formato>
+      </Serie>
+      <Serie Nome="RapaduraCast">
+        <Formato>^RapaduraCast </Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Scicast" Serie="Scicast" Url="http://feed.scicast.com.br">
+      <Serie Nome="Contrafactual">
+        <Formato>^Contrafactual </Formato>
+      </Serie>
+    </Feed>
 
 
-		<!-- Inativos -->
-		<!--
-        <Feed Nome="Save Game" Url="http://www.b9.com.br/podcasts/save-game/feed/" />
+    <!-- Inativos -->
+    <!--
+        <Feed Nome="Save Game" Serie="Save Game" Url="http://www.b9.com.br/podcasts/save-game/feed/" />
         -->
-	</Feeds>
+  </Feeds>
 
-	<LimiteEpisodios>5</LimiteEpisodios>
+  <LimiteEpisodios>5</LimiteEpisodios>
 
-	<ArquivoSaida>C:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
+  <ArquivoSaida>C:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
 
   <ArquivoSaidaPorPodcast>true</ArquivoSaidaPorPodcast>
 
