@@ -84,7 +84,7 @@ namespace Podcast.Testes
 
         private static void GerarArquivo(IEnumerable<Episodio> episodios, string caminhoArquivo)
         {
-            var episodiosOrdenados = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo);
+            var episodiosOrdenados = episodios.OrderByDescending(x => x.Publicacao.Date).ThenBy(x => x.Titulo);
 
             var sb = new StringBuilder();
             foreach (var episodio in episodiosOrdenados)
