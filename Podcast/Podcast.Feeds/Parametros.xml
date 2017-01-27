@@ -61,11 +61,9 @@
     <Feed Nome="Frango Fino" Url="http://feeds.feedburner.com/frangofinopodcast">
       <Serie Nome="Frango Fino Facts">
         <Formato>^(\[SEM M[ÚU]SICA\] )?FRANGO FINO FACTS </Formato>
-        <Formato></Formato>
       </Serie>
       <Serie Nome="Frango Fino">
         <Formato>^(\[SEM M[ÚU]SICA\] )?FRANGO FINO </Formato>
-        <Formato></Formato>
       </Serie>
       <Serie Nome="Frango de Férias">
         <Formato>^FRANGO DE FÉRIAS </Formato>

@@ -89,7 +89,7 @@ namespace Podcast.Feeds
 
                         foreach (var serie in feed.Series)
                         {
-                            foreach (var formato in serie.Formatos)
+                            foreach (var formato in serie.Formatos.Where(f => !String.IsNullOrWhiteSpace(f)))
                             {
                                 if (Regex.IsMatch(episodio.Titulo, formato, RegexOptions.IgnoreCase))
                                 {
