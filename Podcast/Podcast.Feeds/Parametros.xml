@@ -190,8 +190,8 @@
       <Serie Nome="HaloCast">
         <Formato>^HaloCast </Formato>
       </Serie>
-      <Serie Nome="NerdCast">
-        <Formato>^NerdCast #</Formato>
+      <Serie Nome="NerdTech">
+        <Formato>^NerdTech </Formato>
       </Serie>
       <Serie Nome="Teaser">
         <Formato>^NerdCast \d{0,} Teaser </Formato>
@@ -312,6 +312,6 @@
 
   <ArquivoSaida>C:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
 
-  <ArquivoSaidaPorPodcast>true</ArquivoSaidaPorPodcast>
+  <ArquivoSaidaPorPodcast>false</ArquivoSaidaPorPodcast>
 
 </Parametros>
