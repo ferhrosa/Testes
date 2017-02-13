@@ -15,6 +15,9 @@ namespace Podcast.Dominio.ValueObjects
 		[XmlAttribute]
 		public string Url { get; set; }
 
+        [XmlAttribute]
+        public bool UsarEnclosureUrlComoId { get; set; }
+
         [XmlElement("Serie")]
         public List<Serie> Series { get; set; }
 

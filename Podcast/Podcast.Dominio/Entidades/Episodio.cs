@@ -19,5 +19,9 @@ namespace Podcast.Dominio.Entidades
 		public DateTime Publicacao { get; set; }
 
         public TimeSpan? Duracao { get; set; }
-	}
+
+        public string Link { get; set; }
+
+        public string EnclosureUrl { get; set; }
+    }
 }

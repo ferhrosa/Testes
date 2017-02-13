@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entidades\Episodio.cs" />
+    <Compile Include="ValueObjects\FeedRss\Enclosure.cs" />
     <Compile Include="ValueObjects\Feed.cs" />
     <Compile Include="ValueObjects\FeedRss\Channel.cs" />
     <Compile Include="ValueObjects\FeedRss\Item.cs" />

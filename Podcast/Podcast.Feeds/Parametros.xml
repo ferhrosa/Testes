@@ -35,7 +35,7 @@
     </Feed>
 
     <!-- O nome de série padrão é "Conversa com Criança" ... -->
-    <Feed Nome="Conversa com Criança" Serie="Conversa com Criança" Url="http://feeds.feedburner.com/ConversaComCrianca">
+    <Feed Nome="Conversa com Criança" Serie="Conversa com Criança" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/ConversaComCrianca">
       <!-- ..., mas se o título de algum episódio bater com um dos formatos abaixo, a série será outra. -->
       <Serie Nome="Bate-papo ao vivo">
         <Formato>^Bate-papo ao vivo </Formato>
@@ -58,7 +58,7 @@
 
     <Feed Nome="FIAP Café" Serie="FIAP Café" Url="https://www.fiap.com.br/fiapx/podcast/rss/fiap-cafe" />
 
-    <Feed Nome="Frango Fino" Url="http://feeds.feedburner.com/frangofinopodcast">
+    <Feed Nome="Frango Fino" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/frangofinopodcast">
       <Serie Nome="Frango Fino Facts">
         <Formato>^(\[SEM M[ÚU]SICA\] )?FRANGO FINO FACTS </Formato>
       </Serie>
@@ -85,7 +85,7 @@
     <Feed Nome="Hipsters Ponto Tech" Serie="Hipsters" Url="http://hipsters.tech/feed/podcast/" />
 
     <!-- Games -->
-    <Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/dashpodcast">
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/dashpodcast">
       <Serie Nome="Construindo Mundos">
         <Formato>^Construindo Mundos </Formato>
       </Serie>
@@ -97,7 +97,7 @@
       </Serie>
     </Feed>
     <!-- Não Games -->
-    <Feed Nome="Jogabilidade" Url="http://feeds.feedburner.com/jack-animeclub">
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/jack-animeclub">
       <Serie Nome="Fora da Caixa">
         <Formato>^Fora da Caixa </Formato>
       </Serie>
@@ -202,8 +202,12 @@
     </Feed>
 
     <Feed Nome="O Melhor Podcast do Brasil" Serie="MPB" Url="http://feeds.soundcloud.com/users/soundcloud:users:13696676/sounds.rss" />
-    
-    <Feed Nome="OPEXCast" Serie="OPEXCast" Url="http://feeds.feedburner.com/opexcast" />
+
+    <Feed Nome="OPEXCast" Serie="OPEXCast" Url="http://feeds.feedburner.com/opexcast">
+      <Serie Nome="Pauta Secreta">
+        <Formato>^Pauta Secreta #</Formato>
+      </Serie>
+    </Feed>
     
     <Feed Nome="Overloadr" Serie="Bilheteria" Url="http://feeds.feedburner.com/over-bilheteria" />
     <Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip">
@@ -212,7 +216,7 @@
       </Serie>
     </Feed>
 
-    <Feed Nome="Papo de Gordo" Serie="Papo de Gordo" Url="http://feeds.feedburner.com/papodegordo">
+    <Feed Nome="Papo de Gordo" Serie="Papo de Gordo" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/papodegordo">
       <Serie Nome="Corações Peludos">
         <Formato>^Corações Peludos </Formato>
       </Serie>
@@ -308,7 +312,7 @@
         -->
   </Feeds>
 
-  <LimiteEpisodios>5</LimiteEpisodios>
+  <!--<LimiteEpisodios>5</LimiteEpisodios>-->
 
   <ArquivoSaida>C:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
 

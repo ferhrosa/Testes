@@ -77,10 +77,12 @@ namespace Podcast.Feeds
                     {
                         Podcast = feed.Nome,
                         Serie = feed.Serie,
-                        Id = item.Id,
+                        Id = (feed.UsarEnclosureUrlComoId ? (item.Enclosure.Url) : item.Id),
                         Titulo = item.Title,
                         Publicacao = ConverterData(item.Publicacao),
-                        Duracao = ConverterTempo(item.Duration)
+                        Duracao = ConverterTempo(item.Duration),
+                        Link = item.Link,
+                        EnclosureUrl = item.Enclosure.Url
                     };
 
                     if (feed.Series != null && feed.Series.Any())
@@ -237,7 +239,7 @@ namespace Podcast.Feeds
             }
             catch (Exception ex)
             {
-                throw new Exception($"Erro ao converter o o texto \"{tempoTexto}\" para TimeSpan.\r\nErro: {ex.Message}");
+                throw new Exception($"Erro ao converter o texto \"{tempoTexto}\" para TimeSpan.\r\nErro: {ex.Message}");
             }
         }
 
