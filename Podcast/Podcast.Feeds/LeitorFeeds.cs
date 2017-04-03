@@ -119,7 +119,7 @@ namespace Podcast.Feeds
                 Console.WriteLine("Falhou: {0} | {1}", feed.Nome, ex.Message);
             }
 
-            episodios = episodios.OrderByDescending(x => x.Publicacao.Date).ThenBy(x => x.Titulo).ToList();
+            episodios = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo).ToList();
 
             if (!ignorarLimiteEpisodios && Parametros.LimiteEpisodios > 0 && episodios.Count() > Parametros.LimiteEpisodios)
             {

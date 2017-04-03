@@ -79,12 +79,12 @@ namespace Podcast.Testes
         
         private static string GerarLinhaArquivo(Episodio episodio)
         {
-            return $"{episodio.Podcast}	{episodio.Serie}		{episodio.Titulo}	{episodio.Duracao}	{episodio.Publicacao:d}";
+            return $"{episodio.Podcast}	{episodio.Serie}		{episodio.Titulo}	{episodio.Duracao}	{episodio.Publicacao}";
         }
 
         private static void GerarArquivo(IEnumerable<Episodio> episodios, string caminhoArquivo)
         {
-            var episodiosOrdenados = episodios.OrderByDescending(x => x.Publicacao.Date).ThenBy(x => x.Titulo);
+            var episodiosOrdenados = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo);
 
             var sb = new StringBuilder();
             foreach (var episodio in episodiosOrdenados)

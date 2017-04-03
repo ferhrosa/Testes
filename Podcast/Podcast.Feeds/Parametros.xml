@@ -46,6 +46,9 @@
       <Serie Nome="DNE Extra">
         <Formato>^DNE Extra </Formato>
       </Serie>
+      <Serie Nome="DNE Pocket">
+        <Formato>^DNE Pocket </Formato>
+      </Serie>
       <Serie Nome="DNE">
         <Formato>^DNE </Formato>
       </Serie>
@@ -241,6 +244,9 @@
       <Serie Nome="Especial">
         <Formato>^Papo Torto - Especial</Formato>
       </Serie>
+      <Serie Nome="Papo Curto">
+        <Formato>^Papo Curto</Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="PodQuest" Url="http://feeds.feedburner.com/doublejump/podquest">
@@ -298,15 +304,40 @@
         <Formato>^RapaduraCast </Formato>
       </Serie>
     </Feed>
-
-    <Feed Nome="Scicast" Serie="Scicast" Url="http://feed.scicast.com.br">
+    
+    <Feed Nome="Deviante" Url="http://www.deviante.com.br/podcasts/feed/">
+      <Serie Nome="Scicast">
+        <Formato>^SciCast </Formato>
+      </Serie>
       <Serie Nome="Contrafactual">
         <Formato>^Contrafactual </Formato>
+      </Serie>
+      <Serie Nome="Beco da Bike">
+        <Formato>^Beco da Bike </Formato>
+      </Serie>
+      <Serie Nome="Giro do Beco">
+        <Formato>^Giro do Beco </Formato>
+      </Serie>
+      <Serie Nome="MeiaLuaCast">
+        <Formato>^MeiaLuaCast </Formato>
+      </Serie>
+      <Serie Nome="Miçangas">
+        <Formato>^Miçangas </Formato>
+      </Serie>
+      <Serie Nome="República Deviante">
+        <Formato>^República Deviante </Formato>
+        <Formato>^RepúblicaDeviante </Formato>
       </Serie>
     </Feed>
 
 
     <!-- Inativos -->
+    <!--<Feed Nome="Scicast" Serie="Scicast" Url="http://feed.scicast.com.br">
+      <Serie Nome="Contrafactual">
+        <Formato>^Contrafactual </Formato>
+      </Serie>
+    </Feed>-->
+
     <!--
         <Feed Nome="Save Game" Serie="Save Game" Url="http://www.b9.com.br/podcasts/save-game/feed/" />
         -->
