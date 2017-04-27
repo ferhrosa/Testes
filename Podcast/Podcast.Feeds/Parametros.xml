@@ -42,6 +42,31 @@
       </Serie>
     </Feed>
 
+    <Feed Nome="Deviante" Url="http://www.deviante.com.br/podcasts/feed/">
+      <Serie Nome="Scicast">
+        <Formato>^SciCast </Formato>
+      </Serie>
+      <Serie Nome="Contrafactual">
+        <Formato>^Contrafactual </Formato>
+      </Serie>
+      <Serie Nome="Beco da Bike">
+        <Formato>^Beco da Bike </Formato>
+      </Serie>
+      <Serie Nome="Giro do Beco">
+        <Formato>^Giro do Beco </Formato>
+      </Serie>
+      <Serie Nome="MeiaLuaCast">
+        <Formato>^MeiaLuaCast </Formato>
+      </Serie>
+      <Serie Nome="Miçangas">
+        <Formato>^Miçangas </Formato>
+      </Serie>
+      <Serie Nome="República Deviante">
+        <Formato>^República Deviante </Formato>
+        <Formato>^RepúblicaDeviante </Formato>
+      </Serie>
+    </Feed>
+
     <Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml">
       <Serie Nome="DNE Extra">
         <Formato>^DNE Extra </Formato>
@@ -211,7 +236,7 @@
         <Formato>^Pauta Secreta #</Formato>
       </Serie>
     </Feed>
-    
+
     <Feed Nome="Overloadr" Serie="Bilheteria" Url="http://feeds.feedburner.com/over-bilheteria" />
     <Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip">
       <Serie Nome="Prêmio Overloadr 2016">
@@ -304,31 +329,8 @@
         <Formato>^RapaduraCast </Formato>
       </Serie>
     </Feed>
-    
-    <Feed Nome="Deviante" Url="http://www.deviante.com.br/podcasts/feed/">
-      <Serie Nome="Scicast">
-        <Formato>^SciCast </Formato>
-      </Serie>
-      <Serie Nome="Contrafactual">
-        <Formato>^Contrafactual </Formato>
-      </Serie>
-      <Serie Nome="Beco da Bike">
-        <Formato>^Beco da Bike </Formato>
-      </Serie>
-      <Serie Nome="Giro do Beco">
-        <Formato>^Giro do Beco </Formato>
-      </Serie>
-      <Serie Nome="MeiaLuaCast">
-        <Formato>^MeiaLuaCast </Formato>
-      </Serie>
-      <Serie Nome="Miçangas">
-        <Formato>^Miçangas </Formato>
-      </Serie>
-      <Serie Nome="República Deviante">
-        <Formato>^República Deviante </Formato>
-        <Formato>^RepúblicaDeviante </Formato>
-      </Serie>
-    </Feed>
+
+    <Feed Nome="Uma nêspera no cu" Serie="Uma nêspera no cu" Url="https://nesperanocu.wordpress.com/feed/" />
 
 
     <!-- Inativos -->
