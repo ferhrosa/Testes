@@ -39,10 +39,12 @@ namespace Podcast.Testes
                     // Gera um arquivo por podcast.
                     if (LeitorFeeds.Parametros.ArquivoSaidaPorPodcast)
                     {
-                        var caminhoBase = new FileInfo(LeitorFeeds.Parametros.ArquivoSaida).DirectoryName;
-                        var caminhoArquivo = Path.Combine(caminhoBase, feed.Nome + ".txt");
+                        var ultimaPublicacao = episodios.Max(e => e.Publicacao);
 
-                        GerarArquivo(episodios, caminhoArquivo);
+                        var caminhoBase = new FileInfo(LeitorFeeds.Parametros.ArquivoSaida).DirectoryName;
+                        var caminhoArquivo = Path.Combine(caminhoBase, $"{ultimaPublicacao.ToString("yyyy-MM-dd HH-mm")} - {feed.Nome}{(!string.IsNullOrWhiteSpace(feed.Serie) && feed.Serie != feed.Nome ? $" - {feed.Serie}" : "")}.txt");
+
+                        GeradorArquivo.GerarArquivoTexto(episodios, caminhoArquivo);
                     }
 
                     if (!ignorarLimiteEpisodios && LeitorFeeds.Parametros.LimiteEpisodios > 0 && episodios.Count() > LeitorFeeds.Parametros.LimiteEpisodios)
@@ -69,33 +71,13 @@ namespace Podcast.Testes
                 episodiosGeral.AddRange(task.Result);
             }
 
-            GerarArquivo(episodiosGeral, LeitorFeeds.Parametros.ArquivoSaida);
+            GeradorArquivo.GerarArquivoTexto(episodiosGeral, LeitorFeeds.Parametros.ArquivoSaida);
 
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Pressione qualquer tecla para continuar...");
 
             Console.ReadKey();
         }
-        
-        private static string GerarLinhaArquivo(Episodio episodio)
-        {
-            return $"{episodio.Podcast}	{episodio.Serie}		{episodio.Titulo}	{episodio.Duracao}	{episodio.Publicacao}";
-        }
 
-        private static void GerarArquivo(IEnumerable<Episodio> episodios, string caminhoArquivo)
-        {
-            var episodiosOrdenados = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo);
-
-            var sb = new StringBuilder();
-            foreach (var episodio in episodiosOrdenados)
-            {
-                sb.AppendLine(GerarLinhaArquivo(episodio));
-            }
-
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine($"Dados salvos no arquivo: {caminhoArquivo}");
-
-            File.WriteAllText(caminhoArquivo, sb.ToString());
-        }
     }
 }
