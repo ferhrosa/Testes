@@ -99,14 +99,8 @@
     </Feed>
 
     <Feed Nome="Fronteiras da Ciência" Serie="Frontdaciência" Url="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" />
-
-    <Feed Nome="Geek Out" Serie="Geek Out" Url="https://geekout.fm/feed.xml" />
-
-    <Feed Nome="Grok Podcast" Serie="Grok Podcast" Url="http://www.grokpodcast.com/atom.xml">
-      <Serie Nome="Extra">
-        <Formato>^Extra </Formato>
-      </Serie>
-    </Feed>
+    
+    <Feed Nome="GAMEDEV BR" Serie="GAMEDEV BR" Url="https://gamedevbr-podcast.github.io/rss" />
 
     <Feed Nome="Hack ‘n’ Cast" Serie="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
 
@@ -325,8 +319,8 @@
       <Serie Nome="ÁUDIO JOGO ULTRAGEEK: Apagão">
         <Formato>^ÁUDIO JOGO ULTRAGEEK: Apagão </Formato>
       </Serie>
-      <Serie Nome="RapaduraCast">
-        <Formato>^RapaduraCast </Formato>
+      <Serie Nome="Pixel Redondo">
+        <Formato>^Pixel Redondo </Formato>
       </Serie>
     </Feed>
 
@@ -334,6 +328,15 @@
 
 
     <!-- Inativos -->
+    
+    <!--<Feed Nome="Geek Out" Serie="Geek Out" Url="https://geekout.fm/feed.xml" />-->
+
+    <!--<Feed Nome="Grok Podcast" Serie="Grok Podcast" Url="http://www.grokpodcast.com/atom.xml">
+      <Serie Nome="Extra">
+        <Formato>^Extra </Formato>
+      </Serie>
+    </Feed>-->
+
     <!--<Feed Nome="Scicast" Serie="Scicast" Url="http://feed.scicast.com.br">
       <Serie Nome="Contrafactual">
         <Formato>^Contrafactual </Formato>
