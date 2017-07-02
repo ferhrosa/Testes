@@ -360,7 +360,7 @@
                         <width>8.5</width>
                         <height>3.5</height>
                         <depth>0</depth>
-                        <hotspotX>0.941175997</hotspotX>
+                        <hotspotX>0.941176474</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
@@ -380,6 +380,56 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>279</x>
+                        <y>288</y>
+                        <z>0</z>
+                        <width>8.5</width>
+                        <height>3.5</height>
+                        <depth>0</depth>
+                        <hotspotX>0.941176474</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.57079649</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Propeller_TurnRight" uid="14">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>279</x>
+                        <y>279</y>
+                        <z>0</z>
+                        <width>8.5</width>
+                        <height>3.5</height>
+                        <depth>0</depth>
+                        <hotspotX>0.941175997</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Propeller_TurnRight" uid="16">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>249</x>
                         <y>288</y>
                         <z>0</z>
                         <width>8.5</width>

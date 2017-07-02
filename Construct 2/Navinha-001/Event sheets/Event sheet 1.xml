@@ -15,21 +15,29 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="329141458304690">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="804441088565217" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="405107344110654" type="Propeller_Back">
-                    <param id="0" name="Pin to">Player</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="476701111548505" type="Propeller_TurnLeft">
-                    <param id="0" name="Pin to">Player</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="671364710354202" title="Startup">
+            <sub-events>
+                <event-block sid="329141458304690">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="804441088565217" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="405107344110654" type="Propeller_Back">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="476701111548505" type="Propeller_TurnLeft">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="968240985210827" type="Propeller_TurnRight">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="522832303367791" title="Player Control">
             <sub-events>
                 <event-group description="" sid="981361087169900" title="Fire">
@@ -106,6 +114,9 @@
                                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="612983197301840" type="Player">
                                     <param id="0" name="Angle">Player.Bullet.AngleOfMotion + Player.TurningSpeed</param>
                                 </action>
+                                <action id="-15" name="Set visible" sid="519838263648207" type="Propeller_TurnRight">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="967228313437657">
@@ -114,7 +125,23 @@
                                     <param id="0" name="Key">37 (Left arrow)</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-15" name="Set visible" sid="670675621337127" type="Propeller_TurnLeft">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="624593872197610">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="118557045959143" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="515964767739376" type="Propeller_TurnRight">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
