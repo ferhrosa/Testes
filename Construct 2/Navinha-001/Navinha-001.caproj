@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Navinha-001</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>n47dpx2y53kf</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="233961852186390">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\Backgrounds\blue.png" />
+        </object-type>
+        <object-type name="Mouse" sid="801287045703772">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="119972215838837">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Player" sid="420592840563546">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="MaxSpeed" sid="776245719804309" type="number" />
+                <instance-variable name="TurningSpeed" sid="597524350259995" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="312383727665433">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="347131283145263">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="559322493586965">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572684704681945" speed="5">
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.50505" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\playerShip1_red.png">
+                        <image-point name="Weapon" x="0.933333" y="0.50505" />
+                        <collision-poly>
+                            <point x="0.6" y="0.30303" />
+                            <point x="1" y="0.494949" />
+                            <point x="0.6" y="0.69697" />
+                            <point x="0.506667" y="0.989899" />
+                            <point x="0.186667" y="0.858586" />
+                            <point x="0" y="0.494949" />
+                            <point x="0.186667" y="0.141414" />
+                            <point x="0.506667" y="0.010101" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Laser1" sid="379459341325201">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="251052589430223">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="468460109927800">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856288046884753" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.555556" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\Lasers\laserRed01.png">
+                        <collision-poly>
+                            <point x="0.981481" y="0.111111" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.981481" y="0.888889" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.0555556" y="0.666667" />
+                            <point x="0" y="0.444444" />
+                            <point x="0.0555556" y="0.333333" />
+                            <point x="0.5" y="0.333333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemyBlack1" sid="589179684162989">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="812127397949140">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261138550010361" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.494624" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\Enemies\enemyBlack1.png">
+                        <collision-poly>
+                            <point x="0.119048" y="0.892473" />
+                            <point x="0.22619" y="0.505376" />
+                            <point x="0.119048" y="0.107527" />
+                            <point x="0.5" y="0.0645161" />
+                            <point x="0.809524" y="0.172043" />
+                            <point x="0.690476" y="0.505376" />
+                            <point x="0.809524" y="0.827957" />
+                            <point x="0.5" y="0.935484" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\Enemies\enemyBlack2.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\Enemies\enemyBlack3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\Enemies\enemyBlack4.png" />
+                    <frame duration="1" hotspotX="0.505155" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\Enemies\enemyBlack5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemyBlack2" sid="615953267002771">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="229913390846511">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643842883077700" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\Enemies\enemyBlack2.png">
+                        <collision-poly>
+                            <point x="0.261905" y="0.788462" />
+                            <point x="0.0119048" y="0.5" />
+                            <point x="0.261905" y="0.211538" />
+                            <point x="0.5" y="0.0480769" />
+                            <point x="0.785714" y="0.173077" />
+                            <point x="0.797619" y="0.5" />
+                            <point x="0.785714" y="0.826923" />
+                            <point x="0.5" y="0.951923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemyBlack3" sid="935592563677277">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="879004365449603">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838303364340255" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495146" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter\PNG\Enemies\enemyBlack3.png">
+                        <collision-poly>
+                            <point x="0.202381" y="0.834951" />
+                            <point x="0" y="0.504854" />
+                            <point x="0.202381" y="0.165049" />
+                            <point x="0.5" y="0.00970876" />
+                            <point x="0.869048" y="0.106796" />
+                            <point x="0.892857" y="0.504854" />
+                            <point x="0.880952" y="0.902913" />
+                            <point x="0.5" y="0.990291" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="476936174178078">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="937678643635827">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="9" loop="0" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="294304970905639" speed="30">
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.52381" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_008.png">
+                        <collision-poly>
+                            <point x="0.190476" y="0.190476" />
+                            <point x="0.47619" y="0" />
+                            <point x="0.761905" y="0.238095" />
+                            <point x="0.952381" y="0.47619" />
+                            <point x="0.857143" y="0.857143" />
+                            <point x="0.47619" y="0.952381" />
+                            <point x="0.142857" y="0.857143" />
+                            <point x="0" y="0.47619" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_009.png">
+                        <collision-poly>
+                            <point x="0.214286" y="0.25" />
+                            <point x="0.5" y="0" />
+                            <point x="0.821429" y="0.208333" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.833333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_010.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.178571" />
+                            <point x="0.5" y="0.0357143" />
+                            <point x="0.833333" y="0.178571" />
+                            <point x="0.966667" y="0.5" />
+                            <point x="0.833333" y="0.821429" />
+                            <point x="0.5" y="0.964286" />
+                            <point x="0.166667" y="0.821429" />
+                            <point x="0.0333333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_011.png">
+                        <collision-poly>
+                            <point x="0.115385" y="0.115385" />
+                            <point x="0.5" y="0.0384615" />
+                            <point x="0.884615" y="0.115385" />
+                            <point x="1" y="0.5" />
+                            <point x="0.769231" y="0.769231" />
+                            <point x="0.5" y="0.961538" />
+                            <point x="0.192308" y="0.807692" />
+                            <point x="0.0769231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_012.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.84375" y="0.84375" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_013.png">
+                        <collision-poly>
+                            <point x="0.162162" y="0.166667" />
+                            <point x="0.486486" y="0.0277778" />
+                            <point x="0.810811" y="0.194444" />
+                            <point x="0.972973" y="0.5" />
+                            <point x="0.864865" y="0.861111" />
+                            <point x="0.486486" y="1" />
+                            <point x="0.162162" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_014.png">
+                        <collision-poly>
+                            <point x="0.114286" y="0.111111" />
+                            <point x="0.485714" y="0.0277778" />
+                            <point x="0.742857" y="0.25" />
+                            <point x="0.971429" y="0.5" />
+                            <point x="0.828571" y="0.833333" />
+                            <point x="0.485714" y="0.916667" />
+                            <point x="0.0857143" y="0.916667" />
+                            <point x="0.0285714" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_015.png">
+                        <collision-poly>
+                            <point x="0.159091" y="0.14" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.75" y="0.22" />
+                            <point x="0.977273" y="0.5" />
+                            <point x="0.772727" y="0.8" />
+                            <point x="0.5" y="1" />
+                            <point x="0.204545" y="0.82" />
+                            <point x="0.0454545" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Texturas\spaceshooter_extension\PNG\Sprites\Effects\spaceEffects_016.png">
+                        <collision-poly>
+                            <point x="0.18" y="0.173077" />
+                            <point x="0.5" y="0.0192308" />
+                            <point x="0.84" y="0.153846" />
+                            <point x="1" y="0.5" />
+                            <point x="0.82" y="0.826923" />
+                            <point x="0.5" y="0.961538" />
+                            <point x="0.14" y="0.865385" />
+                            <point x="0.04" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DebugTextSpeed" sid="379166375238507">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="362744721154179">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite2" sid="802744216848193">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772867002139063" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Propeller_Back" sid="437188629563866">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="133932137189200">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="445733874450894" speed="500">
+                    <frame duration="1" hotspotX="0.941176" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Assets\spaceshooter\PNG\Effects\fire03.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.935484" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Assets\spaceshooter\PNG\Effects\fire06.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.935484" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Assets\spaceshooter\PNG\Effects\fire07.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="770915428713895">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926479735129128" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="461443870995551">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="822418962453917" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Propeller_TurnLeft" sid="170887140985652">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="361426500056712">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="170195369311384" speed="500">
+                    <frame duration="1" hotspotX="0.941176" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Assets\spaceshooter\PNG\Effects\fire03.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.935484" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Assets\spaceshooter\PNG\Effects\fire06.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.935484" hotspotY="0.5" original-source="D:\Dev\GitHub\Testes\Construct 2\Assets\spaceshooter\PNG\Effects\fire07.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Audio" uid="10">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="sfx_laser1.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
