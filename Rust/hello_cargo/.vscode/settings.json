@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        // A pasta de output do compilador não precisa ser exibida.
+        "**/target": true
+    }
+}
