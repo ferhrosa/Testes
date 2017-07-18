@@ -204,8 +204,8 @@
       </Serie>
     </Feed>
 
-    <!--<Feed Nome="Nerdcast" Url="https://jovemnerd.com.br/feed-nerdcast/" />-->
-    <Feed Nome="NerdCast" Url="http://feed.nerdcast.com.br">
+    <!--<Feed Nome="NerdCast" Url="http://feed.nerdcast.com.br">-->
+    <Feed Nome="Nerdcast" Url="https://jovemnerd.com.br/feed-nerdcast/">
       <Serie Nome="Empreendedor">
         <Formato>^Empreendedor </Formato>
       </Serie>
@@ -267,6 +267,8 @@
         <Formato>^Papo Curto</Formato>
       </Serie>
     </Feed>
+    
+    <Feed Nome="PodProgramar" Serie="PodProgramar" Url="https://mundopodcast.com.br/podprogramar/feed/" />
 
     <Feed Nome="PodQuest" Url="http://feeds.feedburner.com/doublejump/podquest">
       <Serie Nome="#repost">
