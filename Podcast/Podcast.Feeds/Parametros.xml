@@ -41,6 +41,8 @@
         <Formato>^Bate-papo ao vivo </Formato>
       </Serie>
     </Feed>
+    
+    <Feed Nome="Curso de Japonês - NHK WORLD RÁDIO JAPÃO" Serie="Curso de Japonês" Url="https://www.nhk.or.jp/lesson/common/rss/podcast/portuguese.xml"/>
 
     <Feed Nome="Deviante" Url="http://www.deviante.com.br/podcasts/feed/">
       <Serie Nome="Scicast">
@@ -323,6 +325,9 @@
       </Serie>
       <Serie Nome="Pixel Redondo">
         <Formato>^Pixel Redondo </Formato>
+      </Serie>
+      <Serie Nome="Tock Independente">
+        <Formato>^TOCK INDEPENDENTE </Formato>
       </Serie>
     </Feed>
 
