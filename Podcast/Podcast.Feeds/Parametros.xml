@@ -67,6 +67,12 @@
         <Formato>^República Deviante </Formato>
         <Formato>^RepúblicaDeviante </Formato>
       </Serie>
+      <Serie Nome="Costelas e Hidromel">
+        <Formato>^Costelas e Hidromel </Formato>
+      </Serie>
+      <Serie Nome="Maravilha Albertô">
+        <Formato>^Maravilha Albert</Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml">
