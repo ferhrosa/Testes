@@ -3,16 +3,12 @@ using Podcast.Dominio.ValueObjects;
 using Podcast.Dominio.ValueObjects.FeedRss;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
-using System.ServiceModel.Syndication;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Serialization;
 
 namespace Podcast.Feeds
@@ -55,7 +51,7 @@ namespace Podcast.Feeds
 
         public static async Task<IEnumerable<Episodio>> ListarEpisodiosAsync(Feed feed, bool ignorarLimiteEpisodios = false)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Iniciando: {0}", feed.Nome);
 
             var episodios = new List<Episodio>();
@@ -79,7 +75,7 @@ namespace Podcast.Feeds
                         Serie = feed.Serie,
                         Id = (feed.UsarEnclosureUrlComoId ? (item.Enclosure.Url) : item.Id),
                         Titulo = item.Title,
-                        Publicacao = ConverterData(item.Publicacao),
+                        Publicacao = ConverterData(item.Publicacao, feed, item),
                         Duracao = ConverterTempo(item.Duration),
                         Link = item.Link,
                         EnclosureUrl = item.Enclosure.Url
@@ -111,12 +107,12 @@ namespace Podcast.Feeds
                 stream.Close();
 
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Finalizando: {0}", feed.Nome);
+                Console.WriteLine($"Finalizado: {feed.Nome}");
             }
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Falhou: {0} | {1}", feed.Nome, ex.Message);
+                Console.WriteLine($"Falhou: {feed.Nome} | {ex.Message}");
             }
 
             episodios = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo).ToList();
@@ -132,40 +128,10 @@ namespace Podcast.Feeds
 
         }
 
-        private static DateTime ConverterData(string dataTexto)
+        private static DateTime ConverterData(string dataTexto, Feed feed, Item item)
         {
             var data = new DateTime();
             var dataTextoOriginal = dataTexto;
-
-            //if(Regex.IsMatch(dataTexto.Substring(dataTexto.Length - 5), @"^([-+]{1}[0-9]{4})$"))
-            //{
-            //	dataTexto = dataTexto.Substring(0, dataTexto.Length - 5) + dataTexto.Substring(dataTexto.Length - 5, 3) + ":" + dataTexto.Substring(dataTexto.Length - 2);
-            //}
-
-            //if(!DateTime.TryParseExact(dataTexto, "ddd, dd MMM yyyy HH:mm:ss zzz", CultureInfo.GetCultureInfo("en-US"), DateTimeStyles.None, out data))
-            //{
-            //	if(!DateTime.TryParseExact(dataTexto, "ddd, dd MMM yyyy HH:mm:ss zzz", CultureInfo.GetCultureInfo("pt-BR"), DateTimeStyles.None, out data))
-            //	{
-            //		if(!DateTime.TryParseExact(dataTexto, "ddd, d MMM yyyy HH:mm:ss zzz", CultureInfo.GetCultureInfo("en-US"), DateTimeStyles.None, out data))
-            //		{
-            //			//dataTexto = dataTexto.Replace("GMT", "+00:00");
-
-            //			if(Regex.Replace(dataTexto.Substring(dataTexto.Length - 3), @"[0-9:]", "") != "")
-            //			{
-            //				dataTexto = dataTexto.Substring(0, dataTexto.Length - 3).Trim();
-            //			}
-
-            //			if(!DateTime.TryParseExact(dataTexto, "ddd, dd MMM yyyy HH:mm:ss", CultureInfo.GetCultureInfo("en-US"), DateTimeStyles.None, out data))
-            //			{
-            //				if(!DateTime.TryParseExact(dataTexto, "yyyy-MM-ddTHH:mm:sszzz", CultureInfo.GetCultureInfo("en-US"), DateTimeStyles.None, out data))
-            //				{
-            //					Console.ForegroundColor = ConsoleColor.Red;
-            //					Console.WriteLine("Falha ao converter data: {0}", dataTextoOriginal);
-            //				}
-            //			}
-            //		}
-            //	}
-            //}
 
             dataTexto = dataTexto.Trim();
 
@@ -190,8 +156,10 @@ namespace Podcast.Feeds
                 if (!DateTime.TryParse(dataTexto, out data))
                 {
                     // Se ocorrer erro mesmo assim, apenas gera log de falha na conversão da data.
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Falha ao converter data: {0}", dataTextoOriginal);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine($"Falha ao converter data. Feed: {feed.Nome} | Item: {item.Title} | {dataTextoOriginal}");
+
+                    //throw new Exception($"Falha ao converter data: {dataTextoOriginal}");
                 }
             }
 

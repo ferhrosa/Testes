@@ -17,7 +17,7 @@ namespace Podcast.Feeds
 
         public static void GerarArquivoTexto(IEnumerable<Episodio> episodios, string caminhoArquivo)
         {
-            var episodiosOrdenados = episodios.OrderByDescending(x => x.Publicacao).ThenBy(x => x.Titulo);
+            var episodiosOrdenados = episodios.OrderBy(x => x.Publicacao).ThenBy(x => x.Titulo);
 
             var sb = new StringBuilder();
             foreach (var episodio in episodiosOrdenados)
