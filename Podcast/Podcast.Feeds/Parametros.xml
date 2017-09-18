@@ -73,6 +73,9 @@
       <Serie Nome="Maravilha Albertô">
         <Formato>^Maravilha Albert</Formato>
       </Serie>
+      <Serie Nome="Spin de Notícias">
+        <Formato>^Spin de Notícias</Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml">
