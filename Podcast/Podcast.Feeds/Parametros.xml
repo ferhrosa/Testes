@@ -76,6 +76,12 @@
       <Serie Nome="Spin de Notícias">
         <Formato>^Spin de Notícias</Formato>
       </Serie>
+      <Serie Nome="Fronteiras no Tempo">
+        <Formato>^Fronteiras no Tempo</Formato>
+      </Serie>
+      <Serie Nome="Desafio SciCast">
+        <Formato>^Desafio SciCast</Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml">
@@ -267,6 +273,12 @@
       </Serie>
       <Serie Nome="Podcast dos Lindos">
         <Formato>^Podcast dos Lindos </Formato>
+      </Serie>
+      <Serie Nome="Drops Papo de Gordo">
+        <Formato>^Drops Papo de Gordo </Formato>
+      </Serie>
+      <Serie Nome="Drops dos Lindos">
+        <Formato>^Drops dos Lindos </Formato>
       </Serie>
     </Feed>
 
