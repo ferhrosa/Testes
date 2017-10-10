@@ -116,9 +116,11 @@
     </Feed>
 
     <Feed Nome="Fronteiras da Ciência" Serie="Frontdaciência" Url="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" />
-    
+
     <Feed Nome="GAMEDEV BR" Serie="GAMEDEV BR" Url="https://gamedevbr-podcast.github.io/podcast/feed/" />
 
+    <Feed Nome="GGDevCast" Serie="GGDevCast" Url="http://feeds.feedburner.com/GGDevCast" />
+  
     <Feed Nome="Hack ‘n’ Cast" Serie="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
 
     <Feed Nome="Hipsters Ponto Tech" Serie="Hipsters" Url="http://hipsters.tech/feed/podcast/" />
