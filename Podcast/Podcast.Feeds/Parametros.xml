@@ -125,6 +125,8 @@
 
     <Feed Nome="Hipsters Ponto Tech" Serie="Hipsters" Url="http://hipsters.tech/feed/podcast/" />
 
+    <Feed Nome="Imagina Juntas" Serie="Imagina Juntas" Url="http://imaginajuntas.libsyn.com/rss" />
+
     <!-- Games -->
     <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/dashpodcast">
       <Serie Nome="Construindo Mundos">
@@ -290,6 +292,9 @@
       </Serie>
       <Serie Nome="Papo Curto">
         <Formato>^Papo Curto</Formato>
+      </Serie>
+      <Serie Nome="Imagina Juntas">
+        <Formato>^Imagina Juntas</Formato>
       </Serie>
     </Feed>
     
