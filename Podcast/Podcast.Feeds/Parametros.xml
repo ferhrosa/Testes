@@ -41,7 +41,7 @@
         <Formato>^Bate-papo ao vivo </Formato>
       </Serie>
     </Feed>
-    
+
     <Feed Nome="Curso de Japonês - NHK WORLD RÁDIO JAPÃO" Serie="Curso de Japonês" Url="https://www.nhk.or.jp/lesson/common/rss/podcast/portuguese.xml"/>
 
     <Feed Nome="Deviante" Url="http://www.deviante.com.br/podcasts/feed/">
@@ -82,6 +82,15 @@
       <Serie Nome="Desafio SciCast">
         <Formato>^Desafio SciCast</Formato>
       </Serie>
+      <Serie Nome="SBN">
+        <Formato>^SBN</Formato>
+      </Serie>
+      <Serie Nome="Roda de Violão">
+        <Formato>^Roda de Violão</Formato>
+      </Serie>
+      <Serie Nome="Derivadas">
+        <Formato>^Derivadas</Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml">
@@ -98,10 +107,6 @@
         <Formato>^Mountain </Formato>
       </Serie>
     </Feed>
-
-    <Feed Nome="dotNet Arc Cast" Serie="dotNet Arc Cast" Url="http://podcast.dotnetarchitects.net/feed/" />
-
-    <Feed Nome="FIAP Café" Serie="FIAP Café" Url="https://www.fiap.com.br/fiapx/podcast/rss/fiap-cafe" />
 
     <Feed Nome="Frango Fino" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/frangofinopodcast">
       <Serie Nome="Frango Fino Facts">
@@ -357,13 +362,20 @@
       <Serie Nome="Tock Independente">
         <Formato>^TOCK INDEPENDENTE </Formato>
       </Serie>
+      <Serie Nome="E-mail Show">
+        <Formato>^E-mail Show</Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="Uma nêspera no cu" Serie="Uma nêspera no cu" Url="https://nesperanocu.wordpress.com/feed/" />
 
 
     <!-- Inativos -->
-    
+
+    <!--<Feed Nome="dotNet Arc Cast" Serie="dotNet Arc Cast" Url="http://podcast.dotnetarchitects.net/feed/" />-->
+
+    <!--<Feed Nome="FIAP Café" Serie="FIAP Café" Url="https://www.fiap.com.br/fiapx/podcast/rss/fiap-cafe" />-->
+
     <!--<Feed Nome="Geek Out" Serie="Geek Out" Url="https://geekout.fm/feed.xml" />-->
 
     <!--<Feed Nome="Grok Podcast" Serie="Grok Podcast" Url="http://www.grokpodcast.com/atom.xml">
