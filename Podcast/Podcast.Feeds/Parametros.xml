@@ -230,6 +230,12 @@
       </Serie>
     </Feed>
 
+    <Feed Nome="Nautilus" Url="http://feeds.soundcloud.com/users/soundcloud:users:358099430/sounds.rss">
+      <Serie Nome="Nautilus Link">
+        <Formato>^Nautilus Link</Formato>
+      </Serie>
+    </Feed>
+
     <!--<Feed Nome="NerdCast" Url="http://feed.nerdcast.com.br">-->
     <Feed Nome="Nerdcast" Url="https://jovemnerd.com.br/feed-nerdcast/">
       <Serie Nome="Empreendedor">
