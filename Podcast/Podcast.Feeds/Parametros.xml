@@ -247,6 +247,9 @@
       <Serie Nome="NerdTech">
         <Formato>^NerdTech </Formato>
       </Serie>
+      <Serie Nome="Speak English">
+        <Formato>^Speak English </Formato>
+      </Serie>
       <Serie Nome="Teaser">
         <Formato>^NerdCast \d{0,} Teaser </Formato>
       </Serie>
