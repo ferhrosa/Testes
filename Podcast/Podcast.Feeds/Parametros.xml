@@ -91,6 +91,9 @@
       <Serie Nome="Derivadas">
         <Formato>^Derivadas</Formato>
       </Serie>
+      <Serie Nome="Chute">
+        <Formato>^Chute</Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml">
