@@ -58,7 +58,9 @@ namespace Podcast.Feeds
 
             try
             {
-                var httpClient = new WebClient();
+                var httpClient = new WebClientCustom();
+                httpClient.Headers[HttpRequestHeader.AcceptEncoding] = "gzip, deflate";
+
                 var stream = await httpClient.OpenReadTaskAsync(feed.Url);
 
                 // Cria objeto que serializa e desserializa o objeto Parametros.
