@@ -222,6 +222,9 @@
       <Serie Nome="Plantão Não Ouvo">
         <Formato>^Plantão Não Ouvo #</Formato>
       </Serie>
+      <Serie Nome="Saindo no Soco">
+        <Formato>^Saindo no Soco #</Formato>
+      </Serie>
       <Serie Nome="Teaser">
         <Formato>^Teaser </Formato>
       </Serie>
