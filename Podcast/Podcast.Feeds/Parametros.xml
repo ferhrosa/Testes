@@ -74,7 +74,7 @@
         <Formato>^Maravilha Albert</Formato>
       </Serie>
       <Serie Nome="Spin de Notícias">
-        <Formato>^Spin de Notícias</Formato>
+        <Formato>^Spin </Formato>
       </Serie>
       <Serie Nome="Fronteiras no Tempo">
         <Formato>^Fronteiras no Tempo</Formato>
@@ -126,10 +126,10 @@
     <Feed Nome="Fronteiras da Ciência" Serie="Frontdaciência" Url="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" />
 
     <Feed Nome="GGDevCast" Serie="GGDevCast" Url="http://feeds.feedburner.com/GGDevCast" />
-  
+
     <Feed Nome="Hack ‘n’ Cast" Serie="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
 
-    <Feed Nome="Hipsters Ponto Tech" Serie="Hipsters" Url="http://hipsters.tech/feed/podcast/" />
+    <Feed Nome="Hipsters Ponto Tech" Serie="Hipsters" Url="https://hipsters.tech/feed/podcast/" />
 
     <Feed Nome="IndieVisível" Serie="IndieVisível" Url="http://indievisivel.com.br/category/podcast-indievisivel/feed/" />
 
@@ -317,7 +317,7 @@
         <Formato>^Imagina Juntas</Formato>
       </Serie>
     </Feed>
-    
+
     <Feed Nome="PodProgramar" Serie="PodProgramar" Url="https://mundopodcast.com.br/podprogramar/feed/" />
 
     <Feed Nome="PodQuest" Url="http://feeds.feedburner.com/doublejump/podquest">
@@ -414,7 +414,7 @@
 
   <!--<LimiteEpisodios>5</LimiteEpisodios>-->
 
-  <ArquivoSaida>C:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
+  <ArquivoSaida>D:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
 
   <ArquivoSaidaPorPodcast>false</ArquivoSaidaPorPodcast>
 

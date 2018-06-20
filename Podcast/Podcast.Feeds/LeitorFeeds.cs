@@ -58,6 +58,8 @@ namespace Podcast.Feeds
 
             try
             {
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
                 var httpClient = new WebClientCustom();
                 httpClient.Headers[HttpRequestHeader.AcceptEncoding] = "gzip, deflate";
 
