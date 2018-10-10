@@ -91,8 +91,14 @@
       <Serie Nome="Derivadas">
         <Formato>^Derivadas</Formato>
       </Serie>
-      <Serie Nome="Chute">
+      <Serie Nome="Chutando a Escada">
         <Formato>^Chute</Formato>
+      </Serie>
+      <Serie Nome="N-PIX">
+        <Formato>^N-PIX</Formato>
+      </Serie>
+      <Serie Nome="RPGuaxa">
+        <Formato>^RPG</Formato>
       </Serie>
     </Feed>
 
@@ -136,7 +142,7 @@
     <Feed Nome="Imagina Juntas" Serie="Imagina Juntas" Url="http://imaginajuntas.libsyn.com/rss" />
 
     <!-- Games -->
-    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/dashpodcast">
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://games.jogabilida.de/">
       <Serie Nome="Construindo Mundos">
         <Formato>^Construindo Mundos </Formato>
       </Serie>
@@ -148,7 +154,7 @@
       </Serie>
     </Feed>
     <!-- Não Games -->
-    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/jack-animeclub">
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://naogames.jogabilida.de/">
       <Serie Nome="Fora da Caixa">
         <Formato>^Fora da Caixa </Formato>
       </Serie>
@@ -255,6 +261,9 @@
       </Serie>
       <Serie Nome="Speak English">
         <Formato>^Speak English </Formato>
+      </Serie>
+      <Serie Nome="NerdCash">
+        <Formato>^NerdCash </Formato>
       </Serie>
       <Serie Nome="Teaser">
         <Formato>^NerdCast \d{0,} Teaser </Formato>
