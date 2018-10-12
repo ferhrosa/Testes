@@ -281,7 +281,7 @@
       </Serie>
     </Feed>
 
-    <Feed Nome="Overloadr" Serie="Bilheteria" Url="http://feeds.feedburner.com/over-bilheteria" />
+    <Feed Nome="Overloadr" Serie="Bilheteria" Url="https://www.spreaker.com/show/2987933/episodes/feed" />
     <Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip">
       <Serie Nome="Prêmio Overloadr 2016">
         <Formato>^MotherChip Especial - Prêmio Overloadr 2016</Formato>
