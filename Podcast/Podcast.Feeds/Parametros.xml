@@ -12,7 +12,9 @@
       </Serie>
     </Feed>
 
-    <Feed Nome="AntiCast" Url="http://feeds.feedburner.com/anticastdesign">
+    <Feed Nome="Além do Óbvio" Serie="Além do Óbvio" Url="https://padrim.podbean.com/feed.xml"/>
+
+    <Feed Nome="AntiCast" Url="https://www.spreaker.com/show/3221921/episodes/feed">
       <Serie Nome="AntiCast Urgente">
         <Formato>^AntiCast Urgente </Formato>
       </Serie>
@@ -46,22 +48,22 @@
 
     <Feed Nome="Deviante" Url="http://www.deviante.com.br/podcasts/feed/">
       <Serie Nome="Scicast">
-        <Formato>^SciCast </Formato>
+        <Formato>^SciCast</Formato>
       </Serie>
       <Serie Nome="Contrafactual">
-        <Formato>^Contrafactual </Formato>
+        <Formato>^Contrafactual</Formato>
       </Serie>
       <Serie Nome="Beco da Bike">
-        <Formato>^Beco da Bike </Formato>
+        <Formato>^Beco da Bike</Formato>
       </Serie>
       <Serie Nome="Giro do Beco">
-        <Formato>^Giro do Beco </Formato>
+        <Formato>^Giro do Beco</Formato>
       </Serie>
       <Serie Nome="MeiaLuaCast">
-        <Formato>^MeiaLuaCast </Formato>
+        <Formato>^MeiaLuaCast</Formato>
       </Serie>
       <Serie Nome="Miçangas">
-        <Formato>^Miçangas </Formato>
+        <Formato>^Miçangas</Formato>
       </Serie>
       <Serie Nome="República Deviante">
         <Formato>^República Deviante </Formato>
@@ -74,7 +76,7 @@
         <Formato>^Maravilha Albert</Formato>
       </Serie>
       <Serie Nome="Spin de Notícias">
-        <Formato>^Spin </Formato>
+        <Formato>^Spin</Formato>
       </Serie>
       <Serie Nome="Fronteiras no Tempo">
         <Formato>^Fronteiras no Tempo</Formato>
@@ -99,6 +101,9 @@
       </Serie>
       <Serie Nome="RPGuaxa">
         <Formato>^RPG</Formato>
+      </Serie>
+      <Serie Nome="SciKids">
+        <Formato>^SciKids</Formato>
       </Serie>
     </Feed>
 
@@ -275,12 +280,6 @@
 
     <Feed Nome="O Melhor Podcast do Brasil" Serie="MPB" Url="http://feeds.soundcloud.com/users/soundcloud:users:13696676/sounds.rss" />
 
-    <Feed Nome="OPEXCast" Serie="OPEXCast" Url="http://feeds.feedburner.com/opexcast">
-      <Serie Nome="Pauta Secreta">
-        <Formato>^Pauta Secreta #</Formato>
-      </Serie>
-    </Feed>
-
     <Feed Nome="Overloadr" Serie="Bilheteria" Url="https://www.spreaker.com/show/2987933/episodes/feed" />
     <Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip">
       <Serie Nome="Prêmio Overloadr 2016">
@@ -315,12 +314,15 @@
       </Serie>
     </Feed>
 
-    <Feed Nome="Papo Torto" Serie="Papo Torto" Url="http://feeds.feedburner.com/papotortocast">
+    <Feed Nome="Papo Torto" Serie="Papo Torto" Url="https://halfdeaf.com.br/show/2929970/episodes/feed">
       <Serie Nome="Especial">
         <Formato>^Papo Torto - Especial</Formato>
       </Serie>
       <Serie Nome="Papo Curto">
         <Formato>^Papo Curto</Formato>
+      </Serie>
+      <Serie Nome="Papo Extra">
+        <Formato>^Papo Extra</Formato>
       </Serie>
       <Serie Nome="Imagina Juntas">
         <Formato>^Imagina Juntas</Formato>
@@ -343,6 +345,8 @@
         <Formato>^PodQuest #</Formato>
       </Serie>
     </Feed>
+
+    <Feed Nome="Projeto Humanos" Serie="Projeto Humanos" Url="https://www.spreaker.com/show/3208787/episodes/feed" />
 
     <Feed Nome="RapaduraCast" Url="http://feeds.feedburner.com/rapaduracast">
       <Serie Nome="Extra">
@@ -407,6 +411,12 @@
     <!--<Feed Nome="Grok Podcast" Serie="Grok Podcast" Url="http://www.grokpodcast.com/atom.xml">
       <Serie Nome="Extra">
         <Formato>^Extra </Formato>
+      </Serie>
+    </Feed>-->
+
+    <!--<Feed Nome="OPEXCast" Serie="OPEXCast" Url="http://feeds.feedburner.com/opexcast">
+      <Serie Nome="Pauta Secreta">
+        <Formato>^Pauta Secreta #</Formato>
       </Serie>
     </Feed>-->
 
