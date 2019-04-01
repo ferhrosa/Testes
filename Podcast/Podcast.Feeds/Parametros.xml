@@ -3,9 +3,12 @@
 
   <Feeds>
 
-    <Feed Nome="99Vidas" Url="http://feeds.feedburner.com/99vidaspodcast">
+    <Feed Nome="99Vidas" Url="http://99vidas.com.br/99vidas.xml">
       <Serie Nome="Baú 99Vidas">
         <Formato>^Baú 99Vidas </Formato>
+      </Serie>
+      <Serie Nome="99Vidas Zone">
+        <Formato>^99Vidas Zone </Formato>
       </Serie>
       <Serie Nome="99Vidas">
         <Formato>^99Vidas </Formato>
@@ -49,9 +52,11 @@
     <Feed Nome="Deviante" Url="http://www.deviante.com.br/podcasts/feed/">
       <Serie Nome="Scicast">
         <Formato>^SciCast</Formato>
+        <Formato>\(SciCast</Formato>
       </Serie>
       <Serie Nome="Contrafactual">
         <Formato>^Contrafactual</Formato>
+        <Formato>\(Contrafactual</Formato>
       </Serie>
       <Serie Nome="Beco da Bike">
         <Formato>^Beco da Bike</Formato>
@@ -64,6 +69,7 @@
       </Serie>
       <Serie Nome="Miçangas">
         <Formato>^Miçangas</Formato>
+        <Formato>\(Miçangas</Formato>
       </Serie>
       <Serie Nome="República Deviante">
         <Formato>^República Deviante </Formato>
@@ -77,6 +83,7 @@
       </Serie>
       <Serie Nome="Spin de Notícias">
         <Formato>^Spin</Formato>
+        <Formato>\(Spin</Formato>
       </Serie>
       <Serie Nome="Fronteiras no Tempo">
         <Formato>^Fronteiras no Tempo</Formato>
@@ -92,6 +99,7 @@
       </Serie>
       <Serie Nome="Derivadas">
         <Formato>^Derivadas</Formato>
+        <Formato>\(Derivadas</Formato>
       </Serie>
       <Serie Nome="Chutando a Escada">
         <Formato>^Chute</Formato>
@@ -101,9 +109,11 @@
       </Serie>
       <Serie Nome="RPGuaxa">
         <Formato>^RPG</Formato>
+        <Formato>\(RPGuaxa</Formato>
       </Serie>
       <Serie Nome="SciKids">
         <Formato>^SciKids</Formato>
+        <Formato>\(SciKids</Formato>
       </Serie>
     </Feed>
 
@@ -121,6 +131,8 @@
         <Formato>^Mountain </Formato>
       </Serie>
     </Feed>
+
+    <Feed Nome="Export Report" Serie="Export Report" Url="https://www.spreaker.com/show/3285854/episodes/feed" />
 
     <Feed Nome="Frango Fino" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/frangofinopodcast">
       <Serie Nome="Frango Fino Facts">
@@ -168,6 +180,9 @@
       </Serie>
       <Serie Nome="Linha Quente">
         <Formato>^Linha Quente </Formato>
+      </Serie>
+      <Serie Nome="Utópico">
+        <Formato>^Ut[óo]pico </Formato>
       </Serie>
     </Feed>
 
@@ -285,6 +300,10 @@
       <Serie Nome="Prêmio Overloadr 2016">
         <Formato>^MotherChip Especial - Prêmio Overloadr 2016</Formato>
       </Serie>
+      <Serie Nome="Notícias da Nave Mãe">
+        <Formato>^Notícias da Nave Mãe</Formato>
+        <Formato>^MotherChip Notícias</Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="Papo de Gordo" Serie="Papo de Gordo" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/papodegordo">
@@ -345,6 +364,8 @@
         <Formato>^PodQuest #</Formato>
       </Serie>
     </Feed>
+
+	<Feed Nome="Poucas" Serie="Poucas" Url="http://feeds.soundcloud.com/users/soundcloud:users:24205710/sounds.rss" />
 
     <Feed Nome="Projeto Humanos" Serie="Projeto Humanos" Url="https://www.spreaker.com/show/3208787/episodes/feed" />
 
