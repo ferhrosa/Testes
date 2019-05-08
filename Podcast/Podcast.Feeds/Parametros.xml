@@ -49,41 +49,14 @@
 
     <Feed Nome="Curso de Japonês - NHK WORLD RÁDIO JAPÃO" Serie="Curso de Japonês" Url="https://www.nhk.or.jp/lesson/common/rss/podcast/portuguese.xml"/>
 
-    <Feed Nome="Deviante" Url="http://www.deviante.com.br/podcasts/feed/">
+    <Feed Nome="Deviante" Serie="Scicast" Url="http://www.deviante.com.br/podcasts/scicast/feed/">
       <Serie Nome="Scicast">
         <Formato>^SciCast</Formato>
         <Formato>\(SciCast</Formato>
       </Serie>
-      <Serie Nome="Contrafactual">
-        <Formato>^Contrafactual</Formato>
-        <Formato>\(Contrafactual</Formato>
-      </Serie>
-      <Serie Nome="Beco da Bike">
-        <Formato>^Beco da Bike</Formato>
-      </Serie>
-      <Serie Nome="Giro do Beco">
-        <Formato>^Giro do Beco</Formato>
-      </Serie>
-      <Serie Nome="MeiaLuaCast">
-        <Formato>^MeiaLuaCast</Formato>
-      </Serie>
-      <Serie Nome="Miçangas">
-        <Formato>^Miçangas</Formato>
-        <Formato>\(Miçangas</Formato>
-      </Serie>
-      <Serie Nome="República Deviante">
-        <Formato>^República Deviante </Formato>
-        <Formato>^RepúblicaDeviante </Formato>
-      </Serie>
-      <Serie Nome="Costelas e Hidromel">
-        <Formato>^Costelas e Hidromel </Formato>
-      </Serie>
-      <Serie Nome="Maravilha Albertô">
-        <Formato>^Maravilha Albert</Formato>
-      </Serie>
-      <Serie Nome="Spin de Notícias">
-        <Formato>^Spin</Formato>
-        <Formato>\(Spin</Formato>
+      <Serie Nome="SciKids">
+        <Formato>^SciKids</Formato>
+        <Formato>\(SciKids</Formato>
       </Serie>
       <Serie Nome="Fronteiras no Tempo">
         <Formato>^Fronteiras no Tempo</Formato>
@@ -94,26 +67,20 @@
       <Serie Nome="SBN">
         <Formato>^SBN</Formato>
       </Serie>
-      <Serie Nome="Roda de Violão">
-        <Formato>^Roda de Violão</Formato>
-      </Serie>
-      <Serie Nome="Derivadas">
-        <Formato>^Derivadas</Formato>
-        <Formato>\(Derivadas</Formato>
-      </Serie>
-      <Serie Nome="Chutando a Escada">
-        <Formato>^Chute</Formato>
-      </Serie>
       <Serie Nome="N-PIX">
         <Formato>^N-PIX</Formato>
       </Serie>
-      <Serie Nome="RPGuaxa">
-        <Formato>^RPG</Formato>
-        <Formato>\(RPGuaxa</Formato>
+    </Feed>
+    <Feed Nome="Deviante" Serie="Contrafactual" Url="http://www.deviante.com.br/podcasts/contrafactual/feed/">
+      <Serie Nome="Contrafactual">
+        <Formato>^Contrafactual</Formato>
+        <Formato>\(Contrafactual</Formato>
       </Serie>
-      <Serie Nome="SciKids">
-        <Formato>^SciKids</Formato>
-        <Formato>\(SciKids</Formato>
+    </Feed>
+    <Feed Nome="Deviante" Serie="Spin de Notícias" Url="http://www.deviante.com.br/podcasts/spin/feed/">
+      <Serie Nome="Spin de Notícias">
+        <Formato>^Spin</Formato>
+        <Formato>\(Spin</Formato>
       </Serie>
     </Feed>
 
@@ -266,6 +233,12 @@
       <Serie Nome="Nautilus Link">
         <Formato>^Nautilus Link</Formato>
       </Serie>
+      <Serie Nome="Posso falar?">
+        <Formato>^Posso falar</Formato>
+      </Serie>
+      <Serie Nome="Sonar">
+        <Formato>^Sonar</Formato>
+      </Serie>
     </Feed>
 
     <!--<Feed Nome="NerdCast" Url="http://feed.nerdcast.com.br">-->
@@ -365,7 +338,7 @@
       </Serie>
     </Feed>
 
-	<Feed Nome="Poucas" Serie="Poucas" Url="http://feeds.soundcloud.com/users/soundcloud:users:24205710/sounds.rss" />
+    <Feed Nome="Poucas" Serie="Poucas" Url="http://feeds.soundcloud.com/users/soundcloud:users:24205710/sounds.rss" />
 
     <Feed Nome="Projeto Humanos" Serie="Projeto Humanos" Url="https://www.spreaker.com/show/3208787/episodes/feed" />
 
@@ -413,6 +386,9 @@
       </Serie>
       <Serie Nome="E-mail Show">
         <Formato>^E-mail Show</Formato>
+      </Serie>
+      <Serie Nome="SAC">
+        <Formato>^SAC</Formato>
       </Serie>
     </Feed>
 
