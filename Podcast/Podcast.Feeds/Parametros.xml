@@ -70,6 +70,9 @@
       <Serie Nome="N-PIX">
         <Formato>^N-PIX</Formato>
       </Serie>
+      <Serie Nome="Reimagine o Câncer">
+        <Formato>\(Reimagine o Câncer</Formato>
+      </Serie>
     </Feed>
     <Feed Nome="Deviante" Serie="Contrafactual" Url="http://www.deviante.com.br/podcasts/contrafactual/feed/">
       <Serie Nome="Contrafactual">
@@ -113,20 +116,25 @@
       </Serie>
     </Feed>
 
-    <Feed Nome="Fronteiras da Ciência" Serie="Frontdaciência" Url="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" />
+    <!-- <Feed Nome="Fronteiras da Ciência" Serie="Frontdaciência" Url="http://www.if.ufrgs.br/~arenzon/fronteirasdaciencia.xml" /> -->
 
     <Feed Nome="GGDevCast" Serie="GGDevCast" Url="http://feeds.feedburner.com/GGDevCast" />
 
     <Feed Nome="Hack ‘n’ Cast" Serie="Hack ‘n’ Cast" Url="http://feeds.feedburner.com/hack-n-cast" />
 
-    <Feed Nome="Hipsters Ponto Tech" Serie="Hipsters" Url="https://hipsters.tech/feed/podcast/" />
+    <Feed Nome="Hipsters Ponto Tech" Serie="Hipsters" Url="https://hipsters.tech/feed/podcast/">
+      <Serie Nome="Hipsters On The Road">
+        <Formato>Hipsters On The Road</Formato>
+      </Serie>
+  </Feed>
 
     <Feed Nome="IndieVisível" Serie="IndieVisível" Url="http://indievisivel.com.br/category/podcast-indievisivel/feed/" />
 
     <Feed Nome="Imagina Juntas" Serie="Imagina Juntas" Url="http://imaginajuntas.libsyn.com/rss" />
 
     <!-- Games -->
-    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://games.jogabilida.de/">
+    <!-- <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://games.jogabilida.de/"> -->
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/dashpodcast">
       <Serie Nome="Construindo Mundos">
         <Formato>^Construindo Mundos </Formato>
       </Serie>
@@ -138,7 +146,8 @@
       </Serie>
     </Feed>
     <!-- Não Games -->
-    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://naogames.jogabilida.de/">
+    <!-- <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://naogames.jogabilida.de/"> -->
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/jack-animeclub">
       <Serie Nome="Fora da Caixa">
         <Formato>^Fora da Caixa </Formato>
       </Serie>
@@ -192,7 +201,7 @@
 
     <Feed Nome="Mupoca" Serie="Mupoca" Url="http://feeds.feedburner.com/mupoca" />
 
-    <Feed Nome="Não Ouvo" Url="http://feeds.feedburner.com/naoouvo">
+    <!--<Feed Nome="Não Ouvo" Url="http://feeds.feedburner.com/naoouvo">
       <Serie Nome="Não Ouvo">
         <Formato>^Não Ouvo #</Formato>
       </Serie>
@@ -221,7 +230,7 @@
       <Serie Nome="Teaser">
         <Formato>^Teaser </Formato>
       </Serie>
-    </Feed>
+    </Feed>-->
 
     <Feed Nome="Naruhodo" Url="http://feeds.feedburner.com/naruhodopodcast">
       <Serie Nome="Naruhodo">
@@ -338,7 +347,7 @@
       </Serie>
     </Feed>
 
-    <Feed Nome="Poucas" Serie="Poucas" Url="http://feeds.soundcloud.com/users/soundcloud:users:24205710/sounds.rss" />
+  <Feed Nome="Poucas" Serie="Poucas" Url="http://feeds.soundcloud.com/users/soundcloud:users:24205710/sounds.rss" />
 
     <Feed Nome="Projeto Humanos" Serie="Projeto Humanos" Url="https://www.spreaker.com/show/3208787/episodes/feed" />
 
