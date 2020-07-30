@@ -39,18 +39,12 @@
       </Serie>
     </Feed>
 
-    <!-- O nome de série padrão é "Conversa com Criança" ... -->
-    <Feed Nome="Conversa com Criança" Serie="Conversa com Criança" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/ConversaComCrianca">
-      <!-- ..., mas se o título de algum episódio bater com um dos formatos abaixo, a série será outra. -->
-      <Serie Nome="Bate-papo ao vivo">
-        <Formato>^Bate-papo ao vivo </Formato>
-      </Serie>
-    </Feed>
-
     <Feed Nome="Curso de Japonês - NHK WORLD RÁDIO JAPÃO" Serie="Curso de Japonês" Url="https://www.nhk.or.jp/lesson/common/rss/podcast/portuguese.xml"/>
 
-    <Feed Nome="Deviante" Serie="Scicast" Url="http://www.deviante.com.br/podcasts/scicast/feed/">
-      <Serie Nome="Scicast">
+    <!-- O nome de série padrão é "SciCast" ... -->
+    <Feed Nome="Deviante" Serie="SciCast" Url="http://www.deviante.com.br/podcasts/scicast/feed/">
+      <!-- ..., mas se o título de algum episódio bater com um dos formatos abaixo, a série será outra. -->
+      <Serie Nome="SciCast">
         <Formato>^SciCast</Formato>
         <Formato>\(SciCast</Formato>
       </Serie>
@@ -133,8 +127,8 @@
     <Feed Nome="Imagina Juntas" Serie="Imagina Juntas" Url="http://imaginajuntas.libsyn.com/rss" />
 
     <!-- Games -->
-    <!-- <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://games.jogabilida.de/"> -->
-    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/dashpodcast">
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://games.jogabilida.de/"> 
+    <!--<Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/dashpodcast">-->
       <Serie Nome="Construindo Mundos">
         <Formato>^Construindo Mundos </Formato>
       </Serie>
@@ -146,8 +140,8 @@
       </Serie>
     </Feed>
     <!-- Não Games -->
-    <!-- <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://naogames.jogabilida.de/"> -->
-    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/jack-animeclub">
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://naogames.jogabilida.de/"> 
+    <!--<Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/jack-animeclub">-->
       <Serie Nome="Fora da Caixa">
         <Formato>^Fora da Caixa </Formato>
       </Serie>
@@ -172,6 +166,17 @@
         <Formato>^Extra </Formato>
       </Serie>
     </Feed>
+
+    <Feed Nome="Minha Primeira Vez" Url="https://www.podcloud.com.br/feed/minhaprimeiravez">
+      <Serie Nome="Evangelion">
+        <Formato>Evangelion</Formato>
+      </Serie>
+      <Serie Nome="MPV Pocket">
+        <Formato>^MPV Pocket</Formato>
+      </Serie>
+    </Feed>
+
+    <Feed Nome="Modus Operandi" Serie="Modus Operandi" Url="https://feed.podbean.com/modusoperandi/feed.xml" />
 
     <Feed Nome="MRG" Url="http://feed.matandorobosgigantes.com">
       <Serie Nome="Cinema">
@@ -406,6 +411,12 @@
 
     <!-- Inativos -->
 
+    <!--<Feed Nome="Conversa com Criança" Serie="Conversa com Criança" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/ConversaComCrianca">
+      <Serie Nome="Bate-papo ao vivo">
+        <Formato>^Bate-papo ao vivo </Formato>
+      </Serie>
+    </Feed>-->
+
     <!--<Feed Nome="dotNet Arc Cast" Serie="dotNet Arc Cast" Url="http://podcast.dotnetarchitects.net/feed/" />-->
 
     <!--<Feed Nome="FIAP Café" Serie="FIAP Café" Url="https://www.fiap.com.br/fiapx/podcast/rss/fiap-cafe" />-->
@@ -432,9 +443,7 @@
       </Serie>
     </Feed>-->
 
-    <!--
-        <Feed Nome="Save Game" Serie="Save Game" Url="http://www.b9.com.br/podcasts/save-game/feed/" />
-        -->
+    <!--<Feed Nome="Save Game" Serie="Save Game" Url="http://www.b9.com.br/podcasts/save-game/feed/" />-->
   </Feeds>
 
   <!--<LimiteEpisodios>5</LimiteEpisodios>-->
