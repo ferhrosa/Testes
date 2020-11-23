@@ -82,6 +82,9 @@
     </Feed>
 
     <Feed Nome="DevNaEstrada" Url="http://devnaestrada.com.br/feed.xml">
+      <Serie Nome="DevHealthy">
+        <Formato>^DevHealthy </Formato>
+      </Serie>
       <Serie Nome="DNE Extra">
         <Formato>^DNE Extra </Formato>
       </Serie>
@@ -120,15 +123,20 @@
       <Serie Nome="Hipsters On The Road">
         <Formato>Hipsters On The Road</Formato>
       </Serie>
-  </Feed>
+    </Feed>
 
-    <Feed Nome="IndieVisível" Serie="IndieVisível" Url="http://indievisivel.com.br/category/podcast-indievisivel/feed/" />
-
-    <Feed Nome="Imagina Juntas" Serie="Imagina Juntas" Url="http://imaginajuntas.libsyn.com/rss" />
+    <Feed Nome="Imagina Juntas" Serie="Imagina Juntas" Url="http://imaginajuntas.libsyn.com/rss">
+      <Serie Nome="Imagina a Corrida">
+        <Formato>^Imagina a Corrida </Formato>
+      </Serie>
+      <Serie Nome="Imagina a Leitura">
+        <Formato>^Imagina a Leitura </Formato>
+      </Serie>
+    </Feed>
 
     <!-- Games -->
-    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://games.jogabilida.de/"> 
-    <!--<Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/dashpodcast">-->
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://games.jogabilida.de/">
+      <!--<Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/dashpodcast">-->
       <Serie Nome="Construindo Mundos">
         <Formato>^Construindo Mundos </Formato>
       </Serie>
@@ -140,8 +148,8 @@
       </Serie>
     </Feed>
     <!-- Não Games -->
-    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://naogames.jogabilida.de/"> 
-    <!--<Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/jack-animeclub">-->
+    <Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://naogames.jogabilida.de/">
+      <!--<Feed Nome="Jogabilidade" UsarEnclosureUrlComoId="true" Url="http://feeds.feedburner.com/jack-animeclub">-->
       <Serie Nome="Fora da Caixa">
         <Formato>^Fora da Caixa </Formato>
       </Serie>
@@ -158,7 +166,10 @@
 
     <Feed Nome="Lambda3" Serie="Lambda3" Url="http://blog.lambda3.com.br/feed/podcast" />
 
-    <Feed Nome="Mamilos" Serie="Mamilos" Url="http://feeds.feedburner.com/mamilos">
+    <Feed Nome="Mamilos" Serie="Mamilos" Url="https://feeds.feedburner.com/mamilos">
+      <Serie Nome="Mamilos Cultura">
+        <Formato>^Mamilos Cultura </Formato>
+      </Serie>
       <Serie Nome="Retrospectiva">
         <Formato>^Retrospectiva </Formato>
       </Serie>
@@ -280,8 +291,6 @@
       </Serie>
     </Feed>
 
-    <Feed Nome="O Melhor Podcast do Brasil" Serie="MPB" Url="http://feeds.soundcloud.com/users/soundcloud:users:13696676/sounds.rss" />
-
     <Feed Nome="Overloadr" Serie="Bilheteria" Url="https://www.spreaker.com/show/2987933/episodes/feed" />
     <Feed Nome="Overloadr" Serie="MotherChip" Url="http://feeds.feedburner.com/Motherchip">
       <Serie Nome="Prêmio Overloadr 2016">
@@ -352,7 +361,7 @@
       </Serie>
     </Feed>
 
-  <Feed Nome="Poucas" Serie="Poucas" Url="http://feeds.soundcloud.com/users/soundcloud:users:24205710/sounds.rss" />
+    <Feed Nome="Poucas" Serie="Poucas" Url="http://feeds.soundcloud.com/users/soundcloud:users:24205710/sounds.rss" />
 
     <Feed Nome="Projeto Humanos" Serie="Projeto Humanos" Url="https://www.spreaker.com/show/3208787/episodes/feed" />
 
@@ -404,6 +413,9 @@
       <Serie Nome="SAC">
         <Formato>^SAC</Formato>
       </Serie>
+      <Serie Nome="TOP 10">
+        <Formato>^TOP 10 </Formato>
+      </Serie>
     </Feed>
 
     <Feed Nome="Uma nêspera no cu" Serie="Uma nêspera no cu" Url="https://nesperanocu.wordpress.com/feed/" />
@@ -431,6 +443,10 @@
       </Serie>
     </Feed>-->
 
+    <!--<Feed Nome="IndieVisível" Serie="IndieVisível" Url="http://indievisivel.com.br/category/podcast-indievisivel/feed/" />-->
+
+    <!--<Feed Nome="O Melhor Podcast do Brasil" Serie="MPB" Url="http://feeds.soundcloud.com/users/soundcloud:users:13696676/sounds.rss" />-->
+
     <!--<Feed Nome="OPEXCast" Serie="OPEXCast" Url="http://feeds.feedburner.com/opexcast">
       <Serie Nome="Pauta Secreta">
         <Formato>^Pauta Secreta #</Formato>
@@ -448,7 +464,7 @@
 
   <!--<LimiteEpisodios>5</LimiteEpisodios>-->
 
-  <ArquivoSaida>D:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
+  <ArquivoSaida>C:\Temp\podcast\episodios\podcasts.txt</ArquivoSaida>
 
   <ArquivoSaidaPorPodcast>false</ArquivoSaidaPorPodcast>
 
